@@ -2,9 +2,11 @@ from pysmt.shortcuts import *
 from pysmt.typing import INT
 import random as rn
 
+def BVLast(n):
+    return BV(2**(n-1),n)
 # vou declarar aqui um exemplo depois passamos para exemplos separados
-n = 4 # [0,0] [0,1] [1,0] [1,1]
-a = 8
+n = 5 # [0,0] [0,1] [1,0] [1,1]
+a = 5
 b = 2
 k = 2*n
 def toInt(s):
@@ -23,6 +25,7 @@ print(BV(2**(n-1),n).bv_str())
 
 print(is_sat(Equals(BVAnd(y,BVOne(n)),BVZero(n))))
 print(is_sat(Equals(BVAnd(x,BV(2**(n-1),n)),BVZero(n))))
+print(is_sat(And(Equals(x,BV(a,n)), Equals(BVAnd(x,BV(2**(n-1),n)),BVZero(n)))))
 
 
 
