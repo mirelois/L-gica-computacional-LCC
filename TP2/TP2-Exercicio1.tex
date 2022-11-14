@@ -1,0 +1,1259 @@
+\documentclass[11pt]{article}
+
+    \usepackage[breakable]{tcolorbox}
+    \usepackage{parskip} % Stop auto-indenting (to mimic markdown behaviour)
+    
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % Maintain compatibility with old templates. Remove in nbconvert 6.0
+    \let\Oldincludegraphics\includegraphics
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionFormat{nocaption}{}
+    \captionsetup{format=nocaption,aboveskip=0pt,belowskip=0pt}
+
+    \usepackage{float}
+    \floatplacement{figure}{H} % forces figures to be placed at the correct location
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+
+    \usepackage{iftex}
+    \ifPDFTeX
+        \usepackage[T1]{fontenc}
+        \IfFileExists{alphabeta.sty}{
+              \usepackage{alphabeta}
+          }{
+              \usepackage[mathletters]{ucs}
+              \usepackage[utf8x]{inputenc}
+          }
+    \else
+        \usepackage{fontspec}
+        \usepackage{unicode-math}
+    \fi
+
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range
+    \makeatletter % fix for old versions of grffile with XeLaTeX
+    \@ifpackagelater{grffile}{2019/11/01}
+    {
+      % Do nothing on new versions
+    }
+    {
+      \def\Gread@@xetex#1{%
+        \IfFileExists{"\Gin@base".bb}%
+        {\Gread@eps{\Gin@base.bb}}%
+        {\Gread@@xetex@aux#1}%
+      }
+    }
+    \makeatother
+    \usepackage[Export]{adjustbox} % Used to constrain images to a maximum size
+    \adjustboxset{max size={0.9\linewidth}{0.9\paperheight}}
+
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    % The default LaTeX title has an obnoxious amount of whitespace. By default,
+    % titling removes some of it. It also provides customization options.
+    \usepackage{titling}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage{array}     % table support for pandoc >= 2.11.3
+    \usepackage{calc}      % table minipage width calculation for pandoc >= 2.11.1
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    \usepackage{mathrsfs}
+    
+
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+    \definecolor{ansi-default-inverse-fg}{HTML}{FFFFFF}
+    \definecolor{ansi-default-inverse-bg}{HTML}{000000}
+
+    % common color for the border for error outputs.
+    \definecolor{outerrorbackground}{HTML}{FFDFDF}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatibility definitions
+    \def\gt{>}
+    \def\lt{<}
+    \let\Oldtex\TeX
+    \let\Oldlatex\LaTeX
+    \renewcommand{\TeX}{\textrm{\Oldtex}}
+    \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
+    % Document parameters
+    % Document title
+    \title{TP2-Exercicio1}
+    
+    
+    
+    
+    
+% Pygments definitions
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\@namedef{PY@tok@w}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\@namedef{PY@tok@c}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@cp}{\def\PY@tc##1{\textcolor[rgb]{0.61,0.40,0.00}{##1}}}
+\@namedef{PY@tok@k}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kp}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kt}{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\@namedef{PY@tok@o}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@ow}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\@namedef{PY@tok@nb}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@nf}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PY@tok@nc}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PY@tok@nn}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PY@tok@ne}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.80,0.25,0.22}{##1}}}
+\@namedef{PY@tok@nv}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@no}{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\@namedef{PY@tok@nl}{\def\PY@tc##1{\textcolor[rgb]{0.46,0.46,0.00}{##1}}}
+\@namedef{PY@tok@ni}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.44,0.44,0.44}{##1}}}
+\@namedef{PY@tok@na}{\def\PY@tc##1{\textcolor[rgb]{0.41,0.47,0.13}{##1}}}
+\@namedef{PY@tok@nt}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@nd}{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\@namedef{PY@tok@s}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@sd}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@si}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.64,0.35,0.47}{##1}}}
+\@namedef{PY@tok@se}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.36,0.12}{##1}}}
+\@namedef{PY@tok@sr}{\def\PY@tc##1{\textcolor[rgb]{0.64,0.35,0.47}{##1}}}
+\@namedef{PY@tok@ss}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@sx}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@m}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@gh}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\@namedef{PY@tok@gu}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\@namedef{PY@tok@gd}{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\@namedef{PY@tok@gi}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.52,0.00}{##1}}}
+\@namedef{PY@tok@gr}{\def\PY@tc##1{\textcolor[rgb]{0.89,0.00,0.00}{##1}}}
+\@namedef{PY@tok@ge}{\let\PY@it=\textit}
+\@namedef{PY@tok@gs}{\let\PY@bf=\textbf}
+\@namedef{PY@tok@gp}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\@namedef{PY@tok@go}{\def\PY@tc##1{\textcolor[rgb]{0.44,0.44,0.44}{##1}}}
+\@namedef{PY@tok@gt}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\@namedef{PY@tok@err}{\def\PY@bc##1{{\setlength{\fboxsep}{\string -\fboxrule}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}}
+\@namedef{PY@tok@kc}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kd}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kn}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@kr}{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@bp}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\@namedef{PY@tok@fm}{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\@namedef{PY@tok@vc}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@vg}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@vi}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@vm}{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\@namedef{PY@tok@sa}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@sb}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@sc}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@dl}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@s2}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@sh}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@s1}{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\@namedef{PY@tok@mb}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@mf}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@mh}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@mi}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@il}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@mo}{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\@namedef{PY@tok@ch}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@cm}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@cpf}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@c1}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+\@namedef{PY@tok@cs}{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.24,0.48,0.48}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % For linebreaks inside Verbatim environment from package fancyvrb. 
+    \makeatletter
+        \newbox\Wrappedcontinuationbox 
+        \newbox\Wrappedvisiblespacebox 
+        \newcommand*\Wrappedvisiblespace {\textcolor{red}{\textvisiblespace}} 
+        \newcommand*\Wrappedcontinuationsymbol {\textcolor{red}{\llap{\tiny$\m@th\hookrightarrow$}}} 
+        \newcommand*\Wrappedcontinuationindent {3ex } 
+        \newcommand*\Wrappedafterbreak {\kern\Wrappedcontinuationindent\copy\Wrappedcontinuationbox} 
+        % Take advantage of the already applied Pygments mark-up to insert 
+        % potential linebreaks for TeX processing. 
+        %        {, <, #, %, $, ' and ": go to next line. 
+        %        _, }, ^, &, >, - and ~: stay at end of broken line. 
+        % Use of \textquotesingle for straight quote. 
+        \newcommand*\Wrappedbreaksatspecials {% 
+            \def\PYGZus{\discretionary{\char`\_}{\Wrappedafterbreak}{\char`\_}}% 
+            \def\PYGZob{\discretionary{}{\Wrappedafterbreak\char`\{}{\char`\{}}% 
+            \def\PYGZcb{\discretionary{\char`\}}{\Wrappedafterbreak}{\char`\}}}% 
+            \def\PYGZca{\discretionary{\char`\^}{\Wrappedafterbreak}{\char`\^}}% 
+            \def\PYGZam{\discretionary{\char`\&}{\Wrappedafterbreak}{\char`\&}}% 
+            \def\PYGZlt{\discretionary{}{\Wrappedafterbreak\char`\<}{\char`\<}}% 
+            \def\PYGZgt{\discretionary{\char`\>}{\Wrappedafterbreak}{\char`\>}}% 
+            \def\PYGZsh{\discretionary{}{\Wrappedafterbreak\char`\#}{\char`\#}}% 
+            \def\PYGZpc{\discretionary{}{\Wrappedafterbreak\char`\%}{\char`\%}}% 
+            \def\PYGZdl{\discretionary{}{\Wrappedafterbreak\char`\$}{\char`\$}}% 
+            \def\PYGZhy{\discretionary{\char`\-}{\Wrappedafterbreak}{\char`\-}}% 
+            \def\PYGZsq{\discretionary{}{\Wrappedafterbreak\textquotesingle}{\textquotesingle}}% 
+            \def\PYGZdq{\discretionary{}{\Wrappedafterbreak\char`\"}{\char`\"}}% 
+            \def\PYGZti{\discretionary{\char`\~}{\Wrappedafterbreak}{\char`\~}}% 
+        } 
+        % Some characters . , ; ? ! / are not pygmentized. 
+        % This macro makes them "active" and they will insert potential linebreaks 
+        \newcommand*\Wrappedbreaksatpunct {% 
+            \lccode`\~`\.\lowercase{\def~}{\discretionary{\hbox{\char`\.}}{\Wrappedafterbreak}{\hbox{\char`\.}}}% 
+            \lccode`\~`\,\lowercase{\def~}{\discretionary{\hbox{\char`\,}}{\Wrappedafterbreak}{\hbox{\char`\,}}}% 
+            \lccode`\~`\;\lowercase{\def~}{\discretionary{\hbox{\char`\;}}{\Wrappedafterbreak}{\hbox{\char`\;}}}% 
+            \lccode`\~`\:\lowercase{\def~}{\discretionary{\hbox{\char`\:}}{\Wrappedafterbreak}{\hbox{\char`\:}}}% 
+            \lccode`\~`\?\lowercase{\def~}{\discretionary{\hbox{\char`\?}}{\Wrappedafterbreak}{\hbox{\char`\?}}}% 
+            \lccode`\~`\!\lowercase{\def~}{\discretionary{\hbox{\char`\!}}{\Wrappedafterbreak}{\hbox{\char`\!}}}% 
+            \lccode`\~`\/\lowercase{\def~}{\discretionary{\hbox{\char`\/}}{\Wrappedafterbreak}{\hbox{\char`\/}}}% 
+            \catcode`\.\active
+            \catcode`\,\active 
+            \catcode`\;\active
+            \catcode`\:\active
+            \catcode`\?\active
+            \catcode`\!\active
+            \catcode`\/\active 
+            \lccode`\~`\~ 	
+        }
+    \makeatother
+
+    \let\OriginalVerbatim=\Verbatim
+    \makeatletter
+    \renewcommand{\Verbatim}[1][1]{%
+        %\parskip\z@skip
+        \sbox\Wrappedcontinuationbox {\Wrappedcontinuationsymbol}%
+        \sbox\Wrappedvisiblespacebox {\FV@SetupFont\Wrappedvisiblespace}%
+        \def\FancyVerbFormatLine ##1{\hsize\linewidth
+            \vtop{\raggedright\hyphenpenalty\z@\exhyphenpenalty\z@
+                \doublehyphendemerits\z@\finalhyphendemerits\z@
+                \strut ##1\strut}%
+        }%
+        % If the linebreak is at a space, the latter will be displayed as visible
+        % space at end of first line, and a continuation symbol starts next line.
+        % Stretch/shrink are however usually zero for typewriter font.
+        \def\FV@Space {%
+            \nobreak\hskip\z@ plus\fontdimen3\font minus\fontdimen4\font
+            \discretionary{\copy\Wrappedvisiblespacebox}{\Wrappedafterbreak}
+            {\kern\fontdimen2\font}%
+        }%
+        
+        % Allow breaks at special characters using \PYG... macros.
+        \Wrappedbreaksatspecials
+        % Breaks at punctuation characters . , ; ? ! and / need catcode=\active 	
+        \OriginalVerbatim[#1,codes*=\Wrappedbreaksatpunct]%
+    }
+    \makeatother
+
+    % Exact colors from NB
+    \definecolor{incolor}{HTML}{303F9F}
+    \definecolor{outcolor}{HTML}{D84315}
+    \definecolor{cellborder}{HTML}{CFCFCF}
+    \definecolor{cellbackground}{HTML}{F7F7F7}
+    
+    % prompt
+    \makeatletter
+    \newcommand{\boxspacing}{\kern\kvtcb@left@rule\kern\kvtcb@boxsep}
+    \makeatother
+    \newcommand{\prompt}[4]{
+        {\ttfamily\llap{{\color{#2}[#3]:\hspace{3pt}#4}}\vspace{-\baselineskip}}
+    }
+    
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+\begin{document}
+    
+    \maketitle
+    
+    
+
+    
+    \hypertarget{tp2}{%
+\section{TP2}\label{tp2}}
+
+\hypertarget{grupo-15}{%
+\subsection{Grupo 15}\label{grupo-15}}
+
+Carlos Eduardo Da Silva Machado A96936
+
+Gonçalo Manuel Maia de Sousa A97485
+
+    \hypertarget{problema-1}{%
+\subsection{Problema 1}\label{problema-1}}
+
+    \hypertarget{descriuxe7uxe3o-do-problema}{%
+\subsubsection{Descrição do
+Problema}\label{descriuxe7uxe3o-do-problema}}
+
+    É nos dado um Control Flow Automaton (CFA) que descreve um programa
+imperativo cujo objetivo é implementar a multiplicação de dois inteiros
+a,b, fornecidos como ``input'' e um n, também fornecido como ``input'',
+de precisão limitada. Para alem disso, temos de ter em conta os
+seguintes aspetos: - Existe a possibilidade de alguma das operações do
+programa produzir um erro de ``overflow''; - Os nós do grafo representam
+ações que actuam sobre os ``inputs'' do nó e produzem um ``output'' com
+as operações indicadas; - Os ramos do grafo representam ligações que
+transferem o ``output'' de um nodo para o ``input'' do nodo seguinte.
+Esta transferência é condicionada pela satisfação da condição associada
+ao ramo.
+
+    \hypertarget{abordagem-do-problema}{%
+\subsubsection{Abordagem do Problema}\label{abordagem-do-problema}}
+
+    Para resolver este problema, vamos construir um First Order Transition
+System (FOTS) usando \(BitVector\)'s de tamanho \(n\) de forma a
+descrever o comportamento do autómato acima mencionado.
+
+São parâmetros do problema \(a\), \(b\), \(n\), e \(k\) tais que: 1.
+\(a\) é o valor inicial de \(x\) 2. \(b\) é o valor inicial de \(y\) 3.
+\(k\) é o número máximo de estados num traço do problema, toma o valor
+de \(n+1\) visto que, esse é o número de transições necessárias para
+computar o pior caso possivel. 4. \(n\) é o número de \(bit\)'s máximo
+das variáveis
+
+O autómato consiste na seguinte estrutura: 1. Um estado final
+(\(pc=1\)). 2. Um estado de erro (\(pc=2\)) que marca o estado de
+\(overflow\) 3. Um estado de operações (\(pc=0\)) no o qual todas as
+operações sobre as variaveis serão realizadas
+
+De modo a tratar de casos de \(overflow\) as variáveis \(x\), \(y\) e
+\(z\) são declaradas como \(BitVector\)'s de tamanho \(n+1\). Assim se o
+primeiro bit de uma delas for \(1\) podemos transitar para o estado de
+\(overflow\)
+
+Além disso, por motivos de optimização no caso da variavel \(b\) ser
+maior do que \(a\), são trocadas para que o número de transições seja
+minimizado.
+
+Para além do FOTS, também vamos verificar se \(P≡(x∗y+z=a∗b)\) é um
+invariante do comportamento que estamos a estudar.
+
+    \hypertarget{cuxf3digo-python}{%
+\subsection{Código Python}\label{cuxf3digo-python}}
+
+    \hypertarget{algoritmo-buxe1sico}{%
+\paragraph{Algoritmo básico}\label{algoritmo-buxe1sico}}
+
+    variaveis -\textgreater{} x,y,z,pc
+
+0: while(y!=0):
+
+\begin{verbatim}
+if even(y) then x,y,z = 2*x,y/2,z
+
+if odd(y)  then x,y,z = x,y-1,z+x
+\end{verbatim}
+
+1: stop
+
+    Vamos Utilizar a biblioteca do \(\textit{Pysmt}\) e a biblioteca
+\(\textit{random}\) para resolver este exercício.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{1}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kn}{from} \PY{n+nn}{pysmt}\PY{n+nn}{.}\PY{n+nn}{shortcuts} \PY{k+kn}{import} \PY{o}{*}
+\PY{k+kn}{from} \PY{n+nn}{pysmt}\PY{n+nn}{.}\PY{n+nn}{typing} \PY{k+kn}{import} \PY{n}{INT}
+\PY{k+kn}{import} \PY{n+nn}{random} \PY{k}{as} \PY{n+nn}{rn}
+\end{Verbatim}
+\end{tcolorbox}
+
+    Construção do FOTS:
+
+    Função de declaração:
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{2}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{def} \PY{n+nf}{declare}\PY{p}{(}\PY{n}{i}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+    \PY{n}{state} \PY{o}{=} \PY{p}{\PYZob{}}\PY{p}{\PYZcb{}}
+    \PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{Symbol}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n+nb}{str}\PY{p}{(}\PY{n}{i}\PY{p}{)}\PY{p}{,}\PY{n}{INT}\PY{p}{)}
+    \PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{Symbol}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n+nb}{str}\PY{p}{(}\PY{n}{i}\PY{p}{)}\PY{p}{,}\PY{n}{types}\PY{o}{.}\PY{n}{BVType}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{Symbol}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n+nb}{str}\PY{p}{(}\PY{n}{i}\PY{p}{)}\PY{p}{,}\PY{n}{types}\PY{o}{.}\PY{n}{BVType}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{Symbol}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n+nb}{str}\PY{p}{(}\PY{n}{i}\PY{p}{)}\PY{p}{,}\PY{n}{types}\PY{o}{.}\PY{n}{BVType}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{k}{return} \PY{n}{state}
+\end{Verbatim}
+\end{tcolorbox}
+
+    Função de inicialização:
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{3}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{def} \PY{n+nf}{init}\PY{p}{(}\PY{n}{state}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+    \PY{k}{if} \PY{n}{b} \PY{o}{\PYZgt{}} \PY{n}{a}\PY{p}{:}
+        \PY{n}{a}\PY{p}{,}\PY{n}{b} \PY{o}{=} \PY{n}{b}\PY{p}{,}\PY{n}{a}
+        
+    \PY{n}{tPc} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)} \PY{c+c1}{\PYZsh{} Program counter a zero}
+    \PY{n}{tZ} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVZero}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)} \PY{c+c1}{\PYZsh{} Z a zero}
+    \PY{n}{tX} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)} \PY{c+c1}{\PYZsh{} x inicilizado com valor de a}
+    \PY{n}{tY} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)} \PY{c+c1}{\PYZsh{} y inicilizado com valor de b}
+    \PY{k}{return} \PY{n}{And}\PY{p}{(}\PY{n}{tPc}\PY{p}{,}\PY{n}{tX}\PY{p}{,}\PY{n}{tY}\PY{p}{,}\PY{n}{tZ}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    Função de Transição:
+
+\[\mathsf{trans}(x,y,z,pc,x',y',z',pc')\;\equiv\;\] \[
+ \left\{\begin{array}{lr}
+ (pc=0)\land even(y) \land (y > 0) \land (x'=2x)\land (y'= \frac{y}{2}) \land (z'=c) \land (pc'=0) & \lor \\ 
+ (pc=0) \land odd(y) \land (x'=x) \land (y'=y- 1) \land (z'=x+z) \land (pc'=0)  & \lor \\
+ (pc=0)\land (y = 0) \land overflow(z) \land (x'=x)\land (y'=y) \land (z'=c) \land (pc'=1) & \lor \\
+ (pc=1)\land(x'=x)\land (y'=y)\land (z'=z)\land (pc'=1)& \lor \\
+ (pc=0)\land overflow(y) \land overflow(x) \land overflow(z) \land (x'=x)\land (y'=y) \land (z'=c) \land (pc'=2) & \lor \\ 
+ (pc=2) \land (x'=x) \land (y'=y) \land (z'=z) \land (pc'= 2) & \end{array}\right.
+ \]
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{4}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{def} \PY{n+nf}{BVFirst}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+    \PY{k}{return} \PY{n}{BV}\PY{p}{(}\PY{l+m+mi}{2}\PY{o}{*}\PY{o}{*}\PY{p}{(}\PY{n}{n}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,}\PY{n}{n}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{tEven}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+    \PY{n}{tPcZero} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tYLast} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{BVAnd}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVOne}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{,}\PY{n}{BVZero}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{c+c1}{\PYZsh{}ultimo bit = 0}
+    \PY{n}{tYGt} \PY{o}{=} \PY{n}{BVUGT}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVZero}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{c+c1}{\PYZsh{}y \PYZgt{} 0}
+    \PY{n}{tX} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{BVLShl}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVOne}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{)}\PY{c+c1}{\PYZsh{}2*x}
+    \PY{n}{tY} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{BVLShr}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVOne}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{)}\PY{c+c1}{\PYZsh{}y/2}
+    \PY{n}{tZ} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{c+c1}{\PYZsh{}z}
+    \PY{n}{tPc} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}
+    \PY{k}{return} \PY{n}{And}\PY{p}{(}\PY{n}{tPcZero}\PY{p}{,}\PY{n}{tYLast}\PY{p}{,}\PY{n}{tYGt}\PY{p}{,}\PY{n}{tX}\PY{p}{,}\PY{n}{tY}\PY{p}{,}\PY{n}{tZ}\PY{p}{,}\PY{n}{tPc}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{tOdd}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+    \PY{n}{tPcZero} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tYLast} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{BVAnd}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVOne}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{,}\PY{n}{BVOne}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tX} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tY} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVSub}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVOne}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tZ} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVAdd}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)} 
+    \PY{n}{tPc} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}   
+    \PY{k}{return} \PY{n}{And}\PY{p}{(}\PY{n}{tPcZero}\PY{p}{,}\PY{n}{tYLast}\PY{p}{,}\PY{n}{tX}\PY{p}{,}\PY{n}{tY}\PY{p}{,}\PY{n}{tZ}\PY{p}{,}\PY{n}{tPc}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{tStop}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+    \PY{n}{tPcZero} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tYZero} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVZero}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{c+c1}{\PYZsh{}y=0}
+    \PY{n}{tZFirst} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{BVAnd}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVFirst}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{,}\PY{n}{BVZero}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{c+c1}{\PYZsh{}primriro bit de z = 0}
+    \PY{n}{tX} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tY} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tZ} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tPc} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{k}{return} \PY{n}{And}\PY{p}{(}\PY{n}{tYZero}\PY{p}{,}\PY{n}{tZFirst}\PY{p}{,}\PY{n}{tPcZero}\PY{p}{,}\PY{n}{tX}\PY{p}{,}\PY{n}{tY}\PY{p}{,}\PY{n}{tZ}\PY{p}{,}\PY{n}{tPc}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{tEnd}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{)}\PY{p}{:}
+    \PY{n}{tPcOne} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tX} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tY} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tZ} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tPc} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{k}{return} \PY{n}{And}\PY{p}{(}\PY{n}{tPcOne}\PY{p}{,}\PY{n}{tX}\PY{p}{,}\PY{n}{tY}\PY{p}{,}\PY{n}{tZ}\PY{p}{,}\PY{n}{tPc}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{tError}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+    \PY{n}{tPcZero} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tYFirst} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{BVAnd}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVFirst}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{,}\PY{n}{BVFirst}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tXFirst} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{BVAnd}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVFirst}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{,}\PY{n}{BVFirst}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tZFirst} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{BVAnd}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{BVFirst}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{,}\PY{n}{BVFirst}\PY{p}{(}\PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tX} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tY} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tZ} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tPc} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
+    \PY{k}{return} \PY{n}{And}\PY{p}{(}\PY{n}{tPcZero}\PY{p}{,}\PY{n}{Or}\PY{p}{(}\PY{n}{tYFirst}\PY{p}{,}\PY{n}{tXFirst}\PY{p}{,}\PY{n}{tZFirst}\PY{p}{)}\PY{p}{,}\PY{n}{tX}\PY{p}{,}\PY{n}{tY}\PY{p}{,}\PY{n}{tZ}\PY{p}{,}\PY{n}{tPc}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{tEndError}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{)}\PY{p}{:}
+    \PY{n}{tPcTwo} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
+    \PY{n}{tX} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tY} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tZ} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{curr}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+    \PY{n}{tPc} \PY{o}{=} \PY{n}{Equals}\PY{p}{(}\PY{n}{prox}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{Int}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
+    \PY{k}{return} \PY{n}{And}\PY{p}{(}\PY{n}{tPcTwo}\PY{p}{,}\PY{n}{tX}\PY{p}{,}\PY{n}{tY}\PY{p}{,}\PY{n}{tZ}\PY{p}{,}\PY{n}{tPc}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{trans}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+    \PY{n}{tToStop} \PY{o}{=} \PY{n}{tStop}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{,}\PY{n}{n}\PY{p}{)}
+    \PY{n}{tToEven}   \PY{o}{=} \PY{n}{tEven}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{,}\PY{n}{n}\PY{p}{)}
+    \PY{n}{tToError}  \PY{o}{=} \PY{n}{tError}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{,}\PY{n}{n}\PY{p}{)}
+    \PY{n}{tToEndError} \PY{o}{=} \PY{n}{tEndError}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{)}
+    \PY{n}{tToOdd}    \PY{o}{=} \PY{n}{tOdd}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{,}\PY{n}{n}\PY{p}{)}
+    \PY{n}{tToEnd}    \PY{o}{=} \PY{n}{tEnd}\PY{p}{(}\PY{n}{curr}\PY{p}{,}\PY{n}{prox}\PY{p}{)}
+    \PY{k}{return} \PY{n}{Or}\PY{p}{(}\PY{n}{tToStop}\PY{p}{,}\PY{n}{tToEven}\PY{p}{,}\PY{n}{tToError}\PY{p}{,}\PY{n}{tToEndError}\PY{p}{,}\PY{n}{tToOdd}\PY{p}{,}\PY{n}{tToEnd}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    Função que usa \(\textit{SMT solver}\) para gerar um possível traço de
+execução do programa, imprimindo, para cada estado, as variáveis x,y,z e
+o program counter e função que auxiliar na conversão das variáveis para
+inteiro.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{5}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{def} \PY{n+nf}{toInt}\PY{p}{(}\PY{n}{s}\PY{p}{)}\PY{p}{:}
+    \PY{k}{return} \PY{n+nb}{sum}\PY{p}{(}\PY{p}{[}\PY{n+nb}{int}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{o}{*}\PY{l+m+mi}{2}\PY{o}{*}\PY{o}{*}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{s}\PY{p}{)}\PY{o}{\PYZhy{}}\PY{n}{i}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)} \PY{k}{for} \PY{n}{i}\PY{p}{,}\PY{n}{x} \PY{o+ow}{in} \PY{p}{(}\PY{n+nb}{enumerate}\PY{p}{(}\PY{n}{s}\PY{p}{)}\PY{p}{)}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{6}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{def} \PY{n+nf}{resolve}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{k}\PY{p}{)}\PY{p}{:}
+    \PY{k}{with} \PY{n}{Solver}\PY{p}{(}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{msat}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PY{k}{as} \PY{n}{s}\PY{p}{:}
+            \PY{c+c1}{\PYZsh{} cria k copias do estado}
+            \PY{n}{trace} \PY{o}{=} \PY{p}{[}\PY{n}{declare}\PY{p}{(}\PY{n}{i}\PY{p}{,}\PY{n}{n}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{k}\PY{p}{)}\PY{p}{]}
+            \PY{c+c1}{\PYZsh{}print(trace)}
+            \PY{c+c1}{\PYZsh{} criar o traço}
+            \PY{n}{s}\PY{o}{.}\PY{n}{add\PYZus{}assertion}\PY{p}{(}\PY{n}{init}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{)}
+            \PY{c+c1}{\PYZsh{}print(init(trace[0]))}
+            \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{k}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{:}
+                \PY{n}{s}\PY{o}{.}\PY{n}{add\PYZus{}assertion}\PY{p}{(}\PY{n}{trans}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{,} \PY{n}{trace}\PY{p}{[}\PY{n}{i}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{)}
+
+            \PY{k}{if} \PY{n}{s}\PY{o}{.}\PY{n}{solve}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+                \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{k}\PY{p}{)}\PY{p}{:}
+                    \PY{n+nb}{print}\PY{p}{(}\PY{n}{i}\PY{p}{)}
+                    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{pc=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{pc} \PY{o}{:=} \PY{n}{s}\PY{o}{.}\PY{n}{get\PYZus{}value}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pc}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{constant\PYZus{}value}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+                    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{x=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{toInt}\PY{p}{(}\PY{n}{s}\PY{o}{.}\PY{n}{get\PYZus{}value}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+                    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{y=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{toInt}\PY{p}{(}\PY{n}{s}\PY{o}{.}\PY{n}{get\PYZus{}value}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+                    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{z=}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{toInt}\PY{p}{(}\PY{n}{s}\PY{o}{.}\PY{n}{get\PYZus{}value}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+                    \PY{n+nb}{print}\PY{p}{(}\PY{p}{)}
+                    \PY{k}{if} \PY{n}{pc} \PY{o+ow}{in} \PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{:}
+                        \PY{k}{break}
+            \PY{k}{else}\PY{p}{:}
+                \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{no}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    O invariante \(P≡(x∗y+z=a∗b)\) como função \textbf{invariant(state,a,b)}
+e a função de ordem superior
+\textbf{bmc\_always(declare,init,trans,inv,K,a,b,n)} que testa se o
+invariante é verificado para traços de tamanho maximo \(k\).
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{7}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{def} \PY{n+nf}{invariant}\PY{p}{(}\PY{n}{state}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}\PY{p}{:}
+    \PY{k}{return} \PY{n}{Equals}\PY{p}{(}\PY{n}{BVAdd}\PY{p}{(}\PY{n}{BVMul}\PY{p}{(}\PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{state}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{BVMul}\PY{p}{(}\PY{n}{BV}\PY{p}{(}\PY{n}{a}\PY{p}{,} \PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{b}\PY{p}{,} \PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+
+
+\PY{k}{def} \PY{n+nf}{bmc\PYZus{}always}\PY{p}{(}\PY{n}{declare}\PY{p}{,}\PY{n}{init}\PY{p}{,}\PY{n}{trans}\PY{p}{,}\PY{n}{inv}\PY{p}{,}\PY{n}{K}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}\PY{p}{:}
+    \PY{k}{for} \PY{n}{k} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{K}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{:}
+        \PY{k}{with} \PY{n}{Solver}\PY{p}{(}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{z3}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PY{k}{as} \PY{n}{s}\PY{p}{:}
+
+            \PY{n}{trace} \PY{o}{=} \PY{p}{[}\PY{n}{declare}\PY{p}{(}\PY{n}{i}\PY{p}{,}\PY{n}{n}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{k}\PY{p}{)}\PY{p}{]}
+    
+            \PY{n}{s}\PY{o}{.}\PY{n}{add\PYZus{}assertion}\PY{p}{(}\PY{n}{init}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{)}
+            \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{k}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{:}
+                \PY{n}{s}\PY{o}{.}\PY{n}{add\PYZus{}assertion}\PY{p}{(}\PY{n}{trans}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{,} \PY{n}{trace}\PY{p}{[}\PY{n}{i}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{)}
+            
+            \PY{n}{s}\PY{o}{.}\PY{n}{add\PYZus{}assertion}\PY{p}{(}\PY{n}{Not}\PY{p}{(}\PY{n}{inv}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{n}{k}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+            \PY{k}{if} \PY{n}{s}\PY{o}{.}\PY{n}{solve}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+                \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{k}\PY{p}{)}\PY{p}{:}
+                    \PY{k}{for} \PY{n}{v} \PY{o+ow}{in} \PY{n}{trace}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{:}
+                        \PY{n+nb}{print}\PY{p}{(}\PY{n}{v}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{=}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{s}\PY{o}{.}\PY{n}{get\PYZus{}value}\PY{p}{(}\PY{n}{trace}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{n}{v}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+                \PY{k}{return}
+            
+    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{A propriedade é válida para traços de tamanho até }\PY{l+s+s2}{\PYZdq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{k}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \hypertarget{exemplos-e-testes-de-aplicauxe7uxe3o}{%
+\subsubsection{Exemplos e Testes de
+Aplicação}\label{exemplos-e-testes-de-aplicauxe7uxe3o}}
+
+    \hypertarget{exemplo-1}{%
+\paragraph{Exemplo 1}\label{exemplo-1}}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{8}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{n} \PY{o}{=} \PY{l+m+mi}{7}
+\PY{n}{a} \PY{o}{=} \PY{l+m+mi}{4}
+\PY{n}{b} \PY{o}{=} \PY{l+m+mi}{3}
+\PY{n}{k} \PY{o}{=} \PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+x =  0000100
+y =  0000011
+    \end{Verbatim}
+
+    \hypertarget{resoluuxe7uxe3o-do-exemplo-1}{%
+\paragraph{Resolução do Exemplo 1}\label{resoluuxe7uxe3o-do-exemplo-1}}
+
+    Este exemplo é apenas uma mostra de uma multiplicação básica.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{9}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{resolve}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{k}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+0
+pc= 0
+x= 4
+y= 3
+z= 0
+
+1
+pc= 0
+x= 4
+y= 2
+z= 4
+
+2
+pc= 0
+x= 8
+y= 1
+z= 4
+
+3
+pc= 0
+x= 8
+y= 0
+z= 12
+
+4
+pc= 1
+x= 8
+y= 0
+z= 12
+
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{bmc\PYZus{}always}\PY{p}{(}\PY{n}{declare}\PY{p}{,}\PY{n}{init}\PY{p}{,}\PY{n}{trans}\PY{p}{,}\PY{n}{invariant}\PY{p}{,}\PY{n}{k}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+A propriedade é válida para traços de tamanho até 8
+    \end{Verbatim}
+
+    \hypertarget{exemplo-2}{%
+\paragraph{Exemplo 2}\label{exemplo-2}}
+
+    Neste exemplo procuramos apresentar um dos piores casos em termos de
+transições de estado.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{8}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{n} \PY{o}{=} \PY{l+m+mi}{6}
+\PY{n}{a} \PY{o}{=} \PY{l+m+mi}{7}
+\PY{n}{b} \PY{o}{=} \PY{l+m+mi}{7}
+\PY{n}{k} \PY{o}{=} \PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}
+\PY{n}{k\PYZus{}inv} \PY{o}{=} \PY{l+m+mi}{1}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+x =  000111
+y =  000111
+    \end{Verbatim}
+
+    \hypertarget{resoluuxe7uxe3o-do-exemplo-2}{%
+\paragraph{Resolução do Exemplo 2}\label{resoluuxe7uxe3o-do-exemplo-2}}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{9}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{resolve}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{k}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+0
+pc= 0
+x= 7
+y= 7
+z= 0
+
+1
+pc= 0
+x= 7
+y= 6
+z= 7
+
+2
+pc= 0
+x= 14
+y= 3
+z= 7
+
+3
+pc= 0
+x= 14
+y= 2
+z= 21
+
+4
+pc= 0
+x= 28
+y= 1
+z= 21
+
+5
+pc= 0
+x= 28
+y= 0
+z= 49
+
+6
+pc= 1
+x= 28
+y= 0
+z= 49
+
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{bmc\PYZus{}always}\PY{p}{(}\PY{n}{declare}\PY{p}{,}\PY{n}{init}\PY{p}{,}\PY{n}{trans}\PY{p}{,}\PY{n}{invariant}\PY{p}{,}\PY{n}{k}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+A propriedade é válida para traços de tamanho até 7
+    \end{Verbatim}
+
+    \hypertarget{exemplo-3}{%
+\paragraph{Exemplo 3}\label{exemplo-3}}
+
+    Neste exemplo procuramos mostrar a optimização feita de modo a que sejam
+efetuadas o menor número de transições possiveis.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{8}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{n} \PY{o}{=} \PY{l+m+mi}{15}
+\PY{n}{a} \PY{o}{=} \PY{l+m+mi}{1}
+\PY{n}{b} \PY{o}{=} \PY{l+m+mi}{32767}
+\PY{n}{k} \PY{o}{=} \PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+x =  000000000000001
+y =  111111111111111
+    \end{Verbatim}
+
+    \hypertarget{resoluuxe7uxe3o-do-exemplo-3}{%
+\paragraph{Resolução do exemplo 3}\label{resoluuxe7uxe3o-do-exemplo-3}}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{9}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{resolve}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{k}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+0
+pc= 0
+x= 32767
+y= 1
+z= 0
+
+1
+pc= 0
+x= 32767
+y= 0
+z= 32767
+
+2
+pc= 1
+x= 32767
+y= 0
+z= 32767
+
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{bmc\PYZus{}always}\PY{p}{(}\PY{n}{declare}\PY{p}{,}\PY{n}{init}\PY{p}{,}\PY{n}{trans}\PY{p}{,}\PY{n}{invariant}\PY{p}{,}\PY{n}{k}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+A propriedade é válida para traços de tamanho até 16
+    \end{Verbatim}
+
+    \hypertarget{exemplo-4}{%
+\paragraph{Exemplo 4}\label{exemplo-4}}
+
+    Neste exemplo procuramos mostrar um caso de \(overflow\).
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{7}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{n} \PY{o}{=} \PY{l+m+mi}{32}
+\PY{n}{a} \PY{o}{=} \PY{l+m+mi}{65535}
+\PY{n}{b} \PY{o}{=} \PY{l+m+mi}{131069}
+\PY{n}{k} \PY{o}{=} \PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+x =  00000000000000001111111111111111
+y =  00000000000000011111111111111101
+    \end{Verbatim}
+
+    \hypertarget{resoluuxe7uxe3o-do-exemplo-4}{%
+\paragraph{Resolução do exemplo 4}\label{resoluuxe7uxe3o-do-exemplo-4}}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{8}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{resolve}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{k}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+0
+pc= 0
+x= 131069
+y= 65535
+z= 0
+
+1
+pc= 0
+x= 131069
+y= 65534
+z= 131069
+
+2
+pc= 0
+x= 262138
+y= 32767
+z= 131069
+
+3
+pc= 0
+x= 262138
+y= 32766
+z= 393207
+
+4
+pc= 0
+x= 524276
+y= 16383
+z= 393207
+
+5
+pc= 0
+x= 524276
+y= 16382
+z= 917483
+
+6
+pc= 0
+x= 1048552
+y= 8191
+z= 917483
+
+7
+pc= 0
+x= 1048552
+y= 8190
+z= 1966035
+
+8
+pc= 0
+x= 2097104
+y= 4095
+z= 1966035
+
+9
+pc= 0
+x= 2097104
+y= 4094
+z= 4063139
+
+10
+pc= 0
+x= 4194208
+y= 2047
+z= 4063139
+
+11
+pc= 0
+x= 4194208
+y= 2046
+z= 8257347
+
+12
+pc= 0
+x= 8388416
+y= 1023
+z= 8257347
+
+13
+pc= 0
+x= 8388416
+y= 1022
+z= 16645763
+
+14
+pc= 0
+x= 16776832
+y= 511
+z= 16645763
+
+15
+pc= 0
+x= 16776832
+y= 510
+z= 33422595
+
+16
+pc= 0
+x= 33553664
+y= 255
+z= 33422595
+
+17
+pc= 0
+x= 33553664
+y= 254
+z= 66976259
+
+18
+pc= 0
+x= 67107328
+y= 127
+z= 66976259
+
+19
+pc= 0
+x= 67107328
+y= 126
+z= 134083587
+
+20
+pc= 0
+x= 134214656
+y= 63
+z= 134083587
+
+21
+pc= 0
+x= 134214656
+y= 62
+z= 268298243
+
+22
+pc= 0
+x= 268429312
+y= 31
+z= 268298243
+
+23
+pc= 0
+x= 268429312
+y= 30
+z= 536727555
+
+24
+pc= 0
+x= 536858624
+y= 15
+z= 536727555
+
+25
+pc= 0
+x= 536858624
+y= 14
+z= 1073586179
+
+26
+pc= 0
+x= 1073717248
+y= 7
+z= 1073586179
+
+27
+pc= 0
+x= 1073717248
+y= 6
+z= 2147303427
+
+28
+pc= 0
+x= 2147434496
+y= 3
+z= 2147303427
+
+29
+pc= 0
+x= 2147434496
+y= 2
+z= 4294737923
+
+30
+pc= 0
+x= 4294868992
+y= 1
+z= 4294737923
+
+31
+pc= 0
+x= 4294868992
+y= 0
+z= 8589606915
+
+32
+pc= 2
+x= 4294868992
+y= 0
+z= 8589606915
+
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{11}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{bmc\PYZus{}always}\PY{p}{(}\PY{n}{declare}\PY{p}{,}\PY{n}{init}\PY{p}{,}\PY{n}{trans}\PY{p}{,}\PY{n}{invariant}\PY{p}{,}\PY{n}{k}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+A propriedade é válida para traços de tamanho até 33
+    \end{Verbatim}
+
+    \hypertarget{exemplo-5}{%
+\paragraph{Exemplo 5}\label{exemplo-5}}
+
+    Este exemplo serve para ser possivel efetuar testes repetidos com
+variaveis aleatórias.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{19}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{n} \PY{o}{=} \PY{l+m+mi}{32}
+\PY{n}{a} \PY{o}{=} \PY{n}{rn}\PY{o}{.}\PY{n}{randrange}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{o}{*}\PY{o}{*}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{)}
+\PY{n}{b} \PY{o}{=} \PY{n}{rn}\PY{o}{.}\PY{n}{randrange}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{o}{*}\PY{o}{*}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{)}
+\PY{n}{k} \PY{o}{=} \PY{n}{n}\PY{o}{+}\PY{l+m+mi}{1}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y = }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{BV}\PY{p}{(}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{o}{.}\PY{n}{bv\PYZus{}str}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+x =  10011100101110110100100011100000
+y =  01101011111101100010110011100010
+    \end{Verbatim}
+
+    \hypertarget{resoluuxe7uxe3o-do-exemplo-5}{%
+\paragraph{Resolução do exemplo 5}\label{resoluuxe7uxe3o-do-exemplo-5}}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{20}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{resolve}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{k}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+0
+pc= 0
+x= 2629519584
+y= 1811295458
+z= 0
+
+1
+pc= 0
+x= 5259039168
+y= 905647729
+z= 0
+
+2
+pc= 0
+x= 5259039168
+y= 905647728
+z= 5259039168
+
+3
+pc= 0
+x= 1928143744
+y= 452823864
+z= 5259039168
+
+4
+pc= 0
+x= 3856287488
+y= 226411932
+z= 5259039168
+
+5
+pc= 0
+x= 7712574976
+y= 113205966
+z= 5259039168
+
+6
+pc= 0
+x= 6835215360
+y= 56602983
+z= 5259039168
+
+7
+pc= 2
+x= 6835215360
+y= 56602983
+z= 5259039168
+
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{21}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{bmc\PYZus{}always}\PY{p}{(}\PY{n}{declare}\PY{p}{,}\PY{n}{init}\PY{p}{,}\PY{n}{trans}\PY{p}{,}\PY{n}{invariant}\PY{p}{,}\PY{n}{k}\PY{p}{,}\PY{n}{n}\PY{p}{,}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+A propriedade é válida para traços de tamanho até 33
+    \end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+\end{document}
