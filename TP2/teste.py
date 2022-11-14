@@ -2,19 +2,24 @@ from pysmt.shortcuts import *
 from pysmt.typing import INT
 import random as rn
 
-def PontosProximos(pos):
-    return [(pos[0]+1,pos[1]),(pos[0]-1,pos[1]),(pos[0],pos[1]+1),(pos[0],pos[1]-1),(pos[0]-1,pos[1]-1),(pos[0]+1,pos[1]+1),(pos[0]-1,pos[1]+1),(pos[0]+1, pos[1]-1)]
+N = 5
 
+l = [[0 for x in range(N)] for y in range(N)]
 
-N = 10
-i,j = 4,4
+l[2][3] = 1
 
-print(len(list(filter(lambda x: x[0] < N+1 and x[1] < N+1,  PontosProximos((i,j))))))
+from pylab import *
+A = rand(5,5)
+figure(1)
+imshow(l)
+grid(True)
 
-d = 0
-for k in filter(lambda x: x[0] < N+1 and x[1] < N+1,  PontosProximos((i,j))):
-    d += 1
-print(d)
+import matplotlib.pyplot as plt
+import numpy as np
 
+# a 2D array with linearly increasing values on the diagonal
+a = np.diag(range(15))
 
-print((1,5) < (4,4))
+plt.matshow(l)
+
+plt.show()
