@@ -427,9 +427,12 @@ descrever o comportamento do autómato acima mencionado.
 São parâmetros do problema \(a\), \(b\), \(n\), e \(k\) tais que: 1.
 \(a\) é o valor inicial de \(x\) 2. \(b\) é o valor inicial de \(y\) 3.
 \(k\) é o número máximo de estados num traço do problema, toma o valor
-de \(n+1\) visto que, esse é o número de transições necessárias para
-computar o pior caso possivel. 4. \(n\) é o número de \(bit\)'s máximo
-das variáveis
+de \(n+1\), este valor é o resultado do seguinte calculo: \[
+2.\log(2^{\frac{n}{2}-1})-1 \approx 2.\log(2^{\frac{n}{2}})-1 = 2\frac{n}{2}-1 = n-1;\\
+\text{Este é o número de operações para o pior caso, com } y = 2^\frac{n}{2}-1, \text{pois são realizados }\\ \log(2^{\frac{n}{2}-1}) \text{ shifts e }\log(2^{\frac{n}{2}-1})-1\text{ subtrações no } y \\
+\text{Para utilizar este valor resta apenas adicionar }2\text{, pois para além de }n-1\text{ estados é necessário incluir o estado inicial e o estado final.} 
+\]\\
+4. \(n\) é o número de \(bit\)'s máximo das variáveis
 
 O autómato consiste na seguinte estrutura: 1. Um estado final
 (\(pc=1\)). 2. Um estado de erro (\(pc=2\)) que marca o estado de
