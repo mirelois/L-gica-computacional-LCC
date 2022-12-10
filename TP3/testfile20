@@ -1,0 +1,5013 @@
+Estado inicial: (False, True, True, False)
+Escolhas: (True, False, False, True)
+
+Traço de 1000 transições:
+Estado: 0
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 1
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 2
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 3
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 4
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 5
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 6
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 7
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 8
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 9
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 10
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 11
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 12
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 13
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 14
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 15
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 16
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 17
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 18
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 19
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 20
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 21
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 22
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 23
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 24
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 25
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 26
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 27
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 28
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 29
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 30
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 31
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 32
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 33
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 34
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 35
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 36
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 37
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 38
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 39
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 40
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 41
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 42
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 43
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 44
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 45
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 46
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 47
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 48
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 49
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 50
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 51
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 52
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 53
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 54
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 55
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 56
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 57
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 58
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 59
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 60
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 61
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 62
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 63
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 64
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 65
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 66
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 67
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 68
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 69
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 70
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 71
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 72
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 73
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 74
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 75
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 76
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 77
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 78
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 79
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 80
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 81
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 82
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 83
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 84
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 85
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 86
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 87
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 88
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 89
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 90
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 91
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 92
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 93
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 94
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 95
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 96
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 97
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 98
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 99
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 100
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 101
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 102
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 103
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 104
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 105
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 106
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 107
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 108
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 109
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 110
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 111
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 112
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 113
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 114
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 115
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 116
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 117
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 118
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 119
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 120
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 121
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 122
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 123
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 124
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 125
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 126
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 127
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 128
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 129
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 130
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 131
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 132
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 133
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 134
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 135
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 136
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 137
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 138
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 139
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 140
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 141
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 142
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 143
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 144
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 145
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 146
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 147
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 148
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 149
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 150
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 151
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 152
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 153
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 154
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 155
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 156
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 157
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 158
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 159
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 160
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 161
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 162
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 163
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 164
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 165
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 166
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 167
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 168
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 169
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 170
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 171
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 172
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 173
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 174
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 175
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 176
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 177
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 178
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 179
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 180
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 181
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 182
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 183
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 184
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 185
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 186
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 187
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 188
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 189
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 190
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 191
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 192
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 193
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 194
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 195
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 196
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 197
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 198
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 199
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 200
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 201
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 202
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 203
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 204
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 205
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 206
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 207
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 208
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 209
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 210
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 211
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 212
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 213
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 214
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 215
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 216
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 217
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 218
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 219
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 220
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 221
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 222
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 223
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 224
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 225
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 226
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 227
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 228
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 229
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 230
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 231
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 232
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 233
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 234
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 235
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 236
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 237
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 238
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 239
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 240
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 241
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 242
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 243
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 244
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 245
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 246
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 247
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 248
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 249
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 250
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 251
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 252
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 253
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 254
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 255
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 256
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 257
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 258
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 259
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 260
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 261
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 262
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 263
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 264
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 265
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 266
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 267
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 268
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 269
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 270
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 271
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 272
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 273
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 274
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 275
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 276
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 277
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 278
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 279
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 280
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 281
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 282
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 283
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 284
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 285
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 286
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 287
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 288
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 289
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 290
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 291
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 292
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 293
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 294
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 295
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 296
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 297
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 298
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 299
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 300
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 301
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 302
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 303
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 304
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 305
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 306
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 307
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 308
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 309
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 310
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 311
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 312
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 313
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 314
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 315
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 316
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 317
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 318
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 319
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 320
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 321
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 322
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 323
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 324
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 325
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 326
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 327
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 328
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 329
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 330
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 331
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 332
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 333
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 334
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 335
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 336
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 337
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 338
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 339
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 340
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 341
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 342
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 343
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 344
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 345
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 346
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 347
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 348
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 349
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 350
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 351
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 352
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 353
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 354
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 355
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 356
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 357
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 358
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 359
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 360
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 361
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 362
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 363
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 364
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 365
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 366
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 367
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 368
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 369
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 370
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 371
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 372
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 373
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 374
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 375
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 376
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 377
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 378
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 379
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 380
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 381
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 382
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 383
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 384
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 385
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 386
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 387
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 388
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 389
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 390
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 391
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 392
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 393
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 394
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 395
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 396
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 397
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 398
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 399
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 400
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 401
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 402
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 403
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 404
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 405
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 406
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 407
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 408
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 409
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 410
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 411
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 412
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 413
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 414
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 415
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 416
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 417
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 418
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 419
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 420
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 421
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 422
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 423
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 424
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 425
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 426
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 427
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 428
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 429
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 430
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 431
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 432
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 433
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 434
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 435
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 436
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 437
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 438
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 439
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 440
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 441
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 442
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 443
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 444
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 445
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 446
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 447
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 448
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 449
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 450
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 451
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 452
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 453
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 454
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 455
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 456
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 457
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 458
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 459
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 460
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 461
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 462
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 463
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 464
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 465
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 466
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 467
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 468
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 469
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 470
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 471
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 472
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 473
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 474
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 475
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 476
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 477
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 478
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 479
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 480
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 481
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 482
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 483
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 484
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 485
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 486
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 487
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 488
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 489
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 490
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 491
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 492
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 493
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 494
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 495
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 496
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 497
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 498
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 499
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 500
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 501
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 502
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 503
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 504
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 505
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 506
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 507
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 508
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 509
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 510
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 511
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 512
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 513
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 514
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 515
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 516
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 517
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 518
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 519
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 520
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 521
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 522
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 523
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 524
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 525
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 526
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 527
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 528
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 529
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 530
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 531
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 532
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 533
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 534
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 535
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 536
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 537
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 538
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 539
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 540
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 541
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 542
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 543
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 544
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 545
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 546
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 547
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 548
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 549
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 550
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 551
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 552
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 553
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 554
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 555
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 556
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 557
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 558
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 559
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 560
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 561
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 562
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 563
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 564
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 565
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 566
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 567
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 568
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 569
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 570
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 571
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 572
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 573
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 574
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 575
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 576
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 577
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 578
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 579
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 580
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 581
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 582
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 583
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 584
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 585
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 586
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 587
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 588
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 589
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 590
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 591
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 592
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 593
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 594
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 595
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 596
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 597
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 598
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 599
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 600
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 601
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 602
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 603
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 604
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 605
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 606
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 607
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 608
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 609
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 610
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 611
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 612
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 613
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 614
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 615
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 616
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 617
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 618
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 619
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 620
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 621
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 622
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 623
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 624
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 625
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 626
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 627
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 628
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 629
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 630
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 631
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 632
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 633
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 634
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 635
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 636
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 637
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 638
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 639
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 640
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 641
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 642
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 643
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 644
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 645
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 646
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 647
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 648
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 649
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 650
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 651
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 652
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 653
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 654
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 655
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 656
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 657
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 658
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 659
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 660
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 661
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 662
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 663
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 664
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 665
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 666
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 667
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 668
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 669
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 670
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 671
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 672
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 673
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 674
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 675
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 676
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 677
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 678
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 679
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 680
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 681
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 682
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 683
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 684
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 685
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 686
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 687
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 688
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 689
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 690
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 691
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 692
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 693
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 694
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 695
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 696
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 697
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 698
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 699
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 700
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 701
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 702
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 703
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 704
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 705
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 706
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 707
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 708
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 709
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 710
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 711
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 712
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 713
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 714
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 715
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 716
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 717
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 718
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 719
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 720
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 721
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 722
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 723
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 724
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 725
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 726
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 727
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 728
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 729
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 730
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 731
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 732
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 733
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 734
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 735
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 736
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 737
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 738
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 739
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 740
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 741
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 742
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 743
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 744
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 745
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 746
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 747
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 748
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 749
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 750
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 751
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 752
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 753
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 754
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 755
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 756
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 757
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 758
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 759
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 760
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 761
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 762
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 763
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 764
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 765
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 766
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 767
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 768
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 769
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 770
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 771
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 772
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 773
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 774
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 775
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 776
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 777
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 778
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 779
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 780
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 781
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 782
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 783
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 784
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 785
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 786
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 787
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 788
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 789
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 790
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 791
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 792
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 793
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 794
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 795
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 796
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 797
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 798
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 799
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 800
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 801
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 802
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 803
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 804
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 805
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 806
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 807
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 808
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 809
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 810
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 811
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 812
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 813
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 814
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 815
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 816
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 817
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 818
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 819
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 820
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 821
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 822
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 823
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 824
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 825
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 826
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 827
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 828
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 829
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 830
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 831
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 832
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 833
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 834
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 835
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 836
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 837
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 838
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 839
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 840
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 841
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 842
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 843
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 844
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 845
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 846
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 847
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 848
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 849
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 850
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 851
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 852
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 853
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 854
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 855
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 856
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 857
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 858
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 859
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 860
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 861
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 862
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 863
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 864
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 865
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 866
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 867
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 868
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 869
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 870
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 871
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 872
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 873
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 874
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 875
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 876
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 877
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 878
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 879
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 880
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 881
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 882
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 883
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 884
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 885
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 886
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 887
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 888
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 889
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 890
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 891
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 892
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 893
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 894
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 895
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 896
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 897
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 898
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 899
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 900
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 901
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 902
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 903
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 904
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 905
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 906
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 907
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 908
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 909
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 910
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 911
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 912
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 913
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 914
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 915
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 916
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 917
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 918
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 919
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 920
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 921
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 922
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 923
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 924
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 925
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 926
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 927
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 928
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 929
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 930
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 931
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 932
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 933
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 934
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 935
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 936
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 937
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 938
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 939
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 940
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 941
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 942
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 943
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 944
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 945
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 946
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 947
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 948
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 949
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 950
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 951
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 952
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 953
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 954
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 955
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 956
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 957
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 958
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 959
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 960
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 961
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 962
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 963
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 964
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 965
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 966
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 967
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 968
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 969
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 970
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 971
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 972
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 973
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 974
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 975
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 976
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 977
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 978
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 979
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 980
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 981
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 982
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 983
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 984
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 985
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 986
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 987
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 988
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 989
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 990
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 991
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 992
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 993
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 994
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 995
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 996
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 997
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 998
+           A = False
+           B = True
+           C = True
+           D = False
+Estado: 999
+           A = False
+           B = True
+           C = True
+           D = False
+
+Verificação BMC do sistema:
+A propriedade é válida para traços de tamanho até 100
+
+Verificação com k-indução do sistema:
+A propriedade é sempre válida
+
+Verificação model checking com interpolantes do sistema:
+unsafe
