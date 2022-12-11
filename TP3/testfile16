@@ -1,122 +1,122 @@
-Estado inicial: (False, True, True, True)
-Escolhas: (True, True, True, False)
+Estado inicial: (False, False, False, True)
+Escolhas: (True, True, False, False)
 
 Traço de 1000 transições:
 Estado: 0
            A = False
-           B = True
-           C = True
+           B = False
+           C = False
            D = True
 Estado: 1
-           A = False
-           B = True
-           C = False
-           D = False
-Estado: 2
            A = True
            B = True
            C = True
            D = True
-Estado: 3
+Estado: 2
            A = False
            B = False
            C = False
            D = False
-Estado: 4
+Estado: 3
            A = True
            B = True
-           C = True
+           C = False
            D = False
+Estado: 4
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 5
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 6
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 7
            A = True
            B = True
-           C = False
-           D = False
-Estado: 8
-           A = True
-           B = False
            C = True
            D = True
-Estado: 9
+Estado: 8
            A = False
            B = False
            C = False
-           D = True
-Estado: 10
+           D = False
+Estado: 9
            A = True
            B = True
+           C = False
+           D = False
+Estado: 10
+           A = True
+           B = False
            C = False
            D = True
 Estado: 11
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 12
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 13
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 14
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 15
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 16
+Estado: 14
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 15
+           A = True
            B = True
            C = False
            D = False
+Estado: 16
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 17
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 18
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 19
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 20
            A = False
            B = False
-           C = True
-           D = True
-Estado: 21
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 22
+           D = False
+Estado: 21
            A = True
            B = True
            C = False
            D = False
+Estado: 22
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 23
            A = True
            B = False
@@ -130,143 +130,143 @@ Estado: 24
 Estado: 25
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 26
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 27
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 28
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 29
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 30
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 31
-           A = False
            B = True
            C = False
            D = False
-Estado: 32
+Estado: 28
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 29
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 30
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 31
            A = True
            B = True
            C = True
            D = True
-Estado: 33
+Estado: 32
            A = False
            B = False
+           C = False
+           D = False
+Estado: 33
+           A = True
+           B = True
            C = False
            D = False
 Estado: 34
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 35
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 36
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 37
            A = True
            B = True
-           C = False
-           D = False
-Estado: 38
-           A = True
-           B = False
            C = True
            D = True
-Estado: 39
+Estado: 38
            A = False
            B = False
            C = False
-           D = True
-Estado: 40
+           D = False
+Estado: 39
            A = True
            B = True
+           C = False
+           D = False
+Estado: 40
+           A = True
+           B = False
            C = False
            D = True
 Estado: 41
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 42
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 43
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 44
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 45
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 46
+Estado: 44
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 45
+           A = True
            B = True
            C = False
            D = False
+Estado: 46
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 47
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 48
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 49
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 50
            A = False
            B = False
-           C = True
-           D = True
-Estado: 51
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 52
+           D = False
+Estado: 51
            A = True
            B = True
            C = False
            D = False
+Estado: 52
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 53
            A = True
            B = False
@@ -280,143 +280,143 @@ Estado: 54
 Estado: 55
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 56
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 57
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 58
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 59
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 60
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 61
-           A = False
            B = True
            C = False
            D = False
-Estado: 62
+Estado: 58
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 59
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 60
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 61
            A = True
            B = True
            C = True
            D = True
-Estado: 63
+Estado: 62
            A = False
            B = False
+           C = False
+           D = False
+Estado: 63
+           A = True
+           B = True
            C = False
            D = False
 Estado: 64
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 65
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 66
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 67
            A = True
            B = True
-           C = False
-           D = False
-Estado: 68
-           A = True
-           B = False
            C = True
            D = True
-Estado: 69
+Estado: 68
            A = False
            B = False
            C = False
-           D = True
-Estado: 70
+           D = False
+Estado: 69
            A = True
            B = True
+           C = False
+           D = False
+Estado: 70
+           A = True
+           B = False
            C = False
            D = True
 Estado: 71
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 72
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 73
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 74
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 75
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 76
+Estado: 74
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 75
+           A = True
            B = True
            C = False
            D = False
+Estado: 76
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 77
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 78
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 79
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 80
            A = False
            B = False
-           C = True
-           D = True
-Estado: 81
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 82
+           D = False
+Estado: 81
            A = True
            B = True
            C = False
            D = False
+Estado: 82
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 83
            A = True
            B = False
@@ -430,143 +430,143 @@ Estado: 84
 Estado: 85
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 86
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 87
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 88
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 89
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 90
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 91
-           A = False
            B = True
            C = False
            D = False
-Estado: 92
+Estado: 88
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 89
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 90
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 91
            A = True
            B = True
            C = True
            D = True
-Estado: 93
+Estado: 92
            A = False
            B = False
+           C = False
+           D = False
+Estado: 93
+           A = True
+           B = True
            C = False
            D = False
 Estado: 94
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 95
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 96
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 97
            A = True
            B = True
-           C = False
-           D = False
-Estado: 98
-           A = True
-           B = False
            C = True
            D = True
-Estado: 99
+Estado: 98
            A = False
            B = False
            C = False
-           D = True
-Estado: 100
+           D = False
+Estado: 99
            A = True
            B = True
+           C = False
+           D = False
+Estado: 100
+           A = True
+           B = False
            C = False
            D = True
 Estado: 101
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 102
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 103
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 104
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 105
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 106
+Estado: 104
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 105
+           A = True
            B = True
            C = False
            D = False
+Estado: 106
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 107
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 108
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 109
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 110
            A = False
            B = False
-           C = True
-           D = True
-Estado: 111
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 112
+           D = False
+Estado: 111
            A = True
            B = True
            C = False
            D = False
+Estado: 112
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 113
            A = True
            B = False
@@ -580,143 +580,143 @@ Estado: 114
 Estado: 115
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 116
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 117
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 118
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 119
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 120
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 121
-           A = False
            B = True
            C = False
            D = False
-Estado: 122
+Estado: 118
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 119
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 120
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 121
            A = True
            B = True
            C = True
            D = True
-Estado: 123
+Estado: 122
            A = False
            B = False
+           C = False
+           D = False
+Estado: 123
+           A = True
+           B = True
            C = False
            D = False
 Estado: 124
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 125
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 126
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 127
            A = True
            B = True
-           C = False
-           D = False
-Estado: 128
-           A = True
-           B = False
            C = True
            D = True
-Estado: 129
+Estado: 128
            A = False
            B = False
            C = False
-           D = True
-Estado: 130
+           D = False
+Estado: 129
            A = True
            B = True
+           C = False
+           D = False
+Estado: 130
+           A = True
+           B = False
            C = False
            D = True
 Estado: 131
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 132
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 133
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 134
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 135
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 136
+Estado: 134
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 135
+           A = True
            B = True
            C = False
            D = False
+Estado: 136
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 137
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 138
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 139
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 140
            A = False
            B = False
-           C = True
-           D = True
-Estado: 141
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 142
+           D = False
+Estado: 141
            A = True
            B = True
            C = False
            D = False
+Estado: 142
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 143
            A = True
            B = False
@@ -730,143 +730,143 @@ Estado: 144
 Estado: 145
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 146
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 147
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 148
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 149
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 150
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 151
-           A = False
            B = True
            C = False
            D = False
-Estado: 152
+Estado: 148
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 149
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 150
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 151
            A = True
            B = True
            C = True
            D = True
-Estado: 153
+Estado: 152
            A = False
            B = False
+           C = False
+           D = False
+Estado: 153
+           A = True
+           B = True
            C = False
            D = False
 Estado: 154
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 155
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 156
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 157
            A = True
            B = True
-           C = False
-           D = False
-Estado: 158
-           A = True
-           B = False
            C = True
            D = True
-Estado: 159
+Estado: 158
            A = False
            B = False
            C = False
-           D = True
-Estado: 160
+           D = False
+Estado: 159
            A = True
            B = True
+           C = False
+           D = False
+Estado: 160
+           A = True
+           B = False
            C = False
            D = True
 Estado: 161
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 162
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 163
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 164
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 165
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 166
+Estado: 164
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 165
+           A = True
            B = True
            C = False
            D = False
+Estado: 166
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 167
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 168
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 169
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 170
            A = False
            B = False
-           C = True
-           D = True
-Estado: 171
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 172
+           D = False
+Estado: 171
            A = True
            B = True
            C = False
            D = False
+Estado: 172
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 173
            A = True
            B = False
@@ -880,143 +880,143 @@ Estado: 174
 Estado: 175
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 176
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 177
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 178
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 179
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 180
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 181
-           A = False
            B = True
            C = False
            D = False
-Estado: 182
+Estado: 178
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 179
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 180
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 181
            A = True
            B = True
            C = True
            D = True
-Estado: 183
+Estado: 182
            A = False
            B = False
+           C = False
+           D = False
+Estado: 183
+           A = True
+           B = True
            C = False
            D = False
 Estado: 184
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 185
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 186
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 187
            A = True
            B = True
-           C = False
-           D = False
-Estado: 188
-           A = True
-           B = False
            C = True
            D = True
-Estado: 189
+Estado: 188
            A = False
            B = False
            C = False
-           D = True
-Estado: 190
+           D = False
+Estado: 189
            A = True
            B = True
+           C = False
+           D = False
+Estado: 190
+           A = True
+           B = False
            C = False
            D = True
 Estado: 191
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 192
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 193
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 194
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 195
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 196
+Estado: 194
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 195
+           A = True
            B = True
            C = False
            D = False
+Estado: 196
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 197
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 198
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 199
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 200
            A = False
            B = False
-           C = True
-           D = True
-Estado: 201
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 202
+           D = False
+Estado: 201
            A = True
            B = True
            C = False
            D = False
+Estado: 202
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 203
            A = True
            B = False
@@ -1030,143 +1030,143 @@ Estado: 204
 Estado: 205
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 206
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 207
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 208
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 209
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 210
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 211
-           A = False
            B = True
            C = False
            D = False
-Estado: 212
+Estado: 208
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 209
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 210
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 211
            A = True
            B = True
            C = True
            D = True
-Estado: 213
+Estado: 212
            A = False
            B = False
+           C = False
+           D = False
+Estado: 213
+           A = True
+           B = True
            C = False
            D = False
 Estado: 214
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 215
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 216
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 217
            A = True
            B = True
-           C = False
-           D = False
-Estado: 218
-           A = True
-           B = False
            C = True
            D = True
-Estado: 219
+Estado: 218
            A = False
            B = False
            C = False
-           D = True
-Estado: 220
+           D = False
+Estado: 219
            A = True
            B = True
+           C = False
+           D = False
+Estado: 220
+           A = True
+           B = False
            C = False
            D = True
 Estado: 221
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 222
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 223
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 224
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 225
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 226
+Estado: 224
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 225
+           A = True
            B = True
            C = False
            D = False
+Estado: 226
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 227
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 228
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 229
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 230
            A = False
            B = False
-           C = True
-           D = True
-Estado: 231
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 232
+           D = False
+Estado: 231
            A = True
            B = True
            C = False
            D = False
+Estado: 232
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 233
            A = True
            B = False
@@ -1180,143 +1180,143 @@ Estado: 234
 Estado: 235
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 236
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 237
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 238
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 239
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 240
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 241
-           A = False
            B = True
            C = False
            D = False
-Estado: 242
+Estado: 238
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 239
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 240
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 241
            A = True
            B = True
            C = True
            D = True
-Estado: 243
+Estado: 242
            A = False
            B = False
+           C = False
+           D = False
+Estado: 243
+           A = True
+           B = True
            C = False
            D = False
 Estado: 244
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 245
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 246
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 247
            A = True
            B = True
-           C = False
-           D = False
-Estado: 248
-           A = True
-           B = False
            C = True
            D = True
-Estado: 249
+Estado: 248
            A = False
            B = False
            C = False
-           D = True
-Estado: 250
+           D = False
+Estado: 249
            A = True
            B = True
+           C = False
+           D = False
+Estado: 250
+           A = True
+           B = False
            C = False
            D = True
 Estado: 251
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 252
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 253
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 254
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 255
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 256
+Estado: 254
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 255
+           A = True
            B = True
            C = False
            D = False
+Estado: 256
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 257
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 258
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 259
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 260
            A = False
            B = False
-           C = True
-           D = True
-Estado: 261
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 262
+           D = False
+Estado: 261
            A = True
            B = True
            C = False
            D = False
+Estado: 262
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 263
            A = True
            B = False
@@ -1330,143 +1330,143 @@ Estado: 264
 Estado: 265
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 266
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 267
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 268
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 269
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 270
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 271
-           A = False
            B = True
            C = False
            D = False
-Estado: 272
+Estado: 268
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 269
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 270
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 271
            A = True
            B = True
            C = True
            D = True
-Estado: 273
+Estado: 272
            A = False
            B = False
+           C = False
+           D = False
+Estado: 273
+           A = True
+           B = True
            C = False
            D = False
 Estado: 274
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 275
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 276
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 277
            A = True
            B = True
-           C = False
-           D = False
-Estado: 278
-           A = True
-           B = False
            C = True
            D = True
-Estado: 279
+Estado: 278
            A = False
            B = False
            C = False
-           D = True
-Estado: 280
+           D = False
+Estado: 279
            A = True
            B = True
+           C = False
+           D = False
+Estado: 280
+           A = True
+           B = False
            C = False
            D = True
 Estado: 281
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 282
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 283
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 284
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 285
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 286
+Estado: 284
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 285
+           A = True
            B = True
            C = False
            D = False
+Estado: 286
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 287
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 288
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 289
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 290
            A = False
            B = False
-           C = True
-           D = True
-Estado: 291
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 292
+           D = False
+Estado: 291
            A = True
            B = True
            C = False
            D = False
+Estado: 292
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 293
            A = True
            B = False
@@ -1480,143 +1480,143 @@ Estado: 294
 Estado: 295
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 296
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 297
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 298
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 299
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 300
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 301
-           A = False
            B = True
            C = False
            D = False
-Estado: 302
+Estado: 298
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 299
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 300
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 301
            A = True
            B = True
            C = True
            D = True
-Estado: 303
+Estado: 302
            A = False
            B = False
+           C = False
+           D = False
+Estado: 303
+           A = True
+           B = True
            C = False
            D = False
 Estado: 304
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 305
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 306
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 307
            A = True
            B = True
-           C = False
-           D = False
-Estado: 308
-           A = True
-           B = False
            C = True
            D = True
-Estado: 309
+Estado: 308
            A = False
            B = False
            C = False
-           D = True
-Estado: 310
+           D = False
+Estado: 309
            A = True
            B = True
+           C = False
+           D = False
+Estado: 310
+           A = True
+           B = False
            C = False
            D = True
 Estado: 311
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 312
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 313
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 314
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 315
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 316
+Estado: 314
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 315
+           A = True
            B = True
            C = False
            D = False
+Estado: 316
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 317
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 318
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 319
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 320
            A = False
            B = False
-           C = True
-           D = True
-Estado: 321
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 322
+           D = False
+Estado: 321
            A = True
            B = True
            C = False
            D = False
+Estado: 322
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 323
            A = True
            B = False
@@ -1630,143 +1630,143 @@ Estado: 324
 Estado: 325
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 326
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 327
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 328
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 329
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 330
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 331
-           A = False
            B = True
            C = False
            D = False
-Estado: 332
+Estado: 328
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 329
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 330
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 331
            A = True
            B = True
            C = True
            D = True
-Estado: 333
+Estado: 332
            A = False
            B = False
+           C = False
+           D = False
+Estado: 333
+           A = True
+           B = True
            C = False
            D = False
 Estado: 334
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 335
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 336
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 337
            A = True
            B = True
-           C = False
-           D = False
-Estado: 338
-           A = True
-           B = False
            C = True
            D = True
-Estado: 339
+Estado: 338
            A = False
            B = False
            C = False
-           D = True
-Estado: 340
+           D = False
+Estado: 339
            A = True
            B = True
+           C = False
+           D = False
+Estado: 340
+           A = True
+           B = False
            C = False
            D = True
 Estado: 341
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 342
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 343
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 344
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 345
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 346
+Estado: 344
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 345
+           A = True
            B = True
            C = False
            D = False
+Estado: 346
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 347
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 348
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 349
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 350
            A = False
            B = False
-           C = True
-           D = True
-Estado: 351
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 352
+           D = False
+Estado: 351
            A = True
            B = True
            C = False
            D = False
+Estado: 352
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 353
            A = True
            B = False
@@ -1780,143 +1780,143 @@ Estado: 354
 Estado: 355
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 356
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 357
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 358
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 359
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 360
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 361
-           A = False
            B = True
            C = False
            D = False
-Estado: 362
+Estado: 358
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 359
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 360
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 361
            A = True
            B = True
            C = True
            D = True
-Estado: 363
+Estado: 362
            A = False
            B = False
+           C = False
+           D = False
+Estado: 363
+           A = True
+           B = True
            C = False
            D = False
 Estado: 364
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 365
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 366
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 367
            A = True
            B = True
-           C = False
-           D = False
-Estado: 368
-           A = True
-           B = False
            C = True
            D = True
-Estado: 369
+Estado: 368
            A = False
            B = False
            C = False
-           D = True
-Estado: 370
+           D = False
+Estado: 369
            A = True
            B = True
+           C = False
+           D = False
+Estado: 370
+           A = True
+           B = False
            C = False
            D = True
 Estado: 371
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 372
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 373
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 374
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 375
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 376
+Estado: 374
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 375
+           A = True
            B = True
            C = False
            D = False
+Estado: 376
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 377
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 378
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 379
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 380
            A = False
            B = False
-           C = True
-           D = True
-Estado: 381
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 382
+           D = False
+Estado: 381
            A = True
            B = True
            C = False
            D = False
+Estado: 382
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 383
            A = True
            B = False
@@ -1930,143 +1930,143 @@ Estado: 384
 Estado: 385
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 386
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 387
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 388
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 389
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 390
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 391
-           A = False
            B = True
            C = False
            D = False
-Estado: 392
+Estado: 388
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 389
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 390
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 391
            A = True
            B = True
            C = True
            D = True
-Estado: 393
+Estado: 392
            A = False
            B = False
+           C = False
+           D = False
+Estado: 393
+           A = True
+           B = True
            C = False
            D = False
 Estado: 394
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 395
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 396
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 397
            A = True
            B = True
-           C = False
-           D = False
-Estado: 398
-           A = True
-           B = False
            C = True
            D = True
-Estado: 399
+Estado: 398
            A = False
            B = False
            C = False
-           D = True
-Estado: 400
+           D = False
+Estado: 399
            A = True
            B = True
+           C = False
+           D = False
+Estado: 400
+           A = True
+           B = False
            C = False
            D = True
 Estado: 401
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 402
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 403
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 404
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 405
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 406
+Estado: 404
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 405
+           A = True
            B = True
            C = False
            D = False
+Estado: 406
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 407
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 408
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 409
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 410
            A = False
            B = False
-           C = True
-           D = True
-Estado: 411
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 412
+           D = False
+Estado: 411
            A = True
            B = True
            C = False
            D = False
+Estado: 412
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 413
            A = True
            B = False
@@ -2080,143 +2080,143 @@ Estado: 414
 Estado: 415
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 416
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 417
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 418
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 419
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 420
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 421
-           A = False
            B = True
            C = False
            D = False
-Estado: 422
+Estado: 418
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 419
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 420
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 421
            A = True
            B = True
            C = True
            D = True
-Estado: 423
+Estado: 422
            A = False
            B = False
+           C = False
+           D = False
+Estado: 423
+           A = True
+           B = True
            C = False
            D = False
 Estado: 424
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 425
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 426
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 427
            A = True
            B = True
-           C = False
-           D = False
-Estado: 428
-           A = True
-           B = False
            C = True
            D = True
-Estado: 429
+Estado: 428
            A = False
            B = False
            C = False
-           D = True
-Estado: 430
+           D = False
+Estado: 429
            A = True
            B = True
+           C = False
+           D = False
+Estado: 430
+           A = True
+           B = False
            C = False
            D = True
 Estado: 431
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 432
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 433
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 434
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 435
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 436
+Estado: 434
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 435
+           A = True
            B = True
            C = False
            D = False
+Estado: 436
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 437
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 438
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 439
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 440
            A = False
            B = False
-           C = True
-           D = True
-Estado: 441
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 442
+           D = False
+Estado: 441
            A = True
            B = True
            C = False
            D = False
+Estado: 442
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 443
            A = True
            B = False
@@ -2230,143 +2230,143 @@ Estado: 444
 Estado: 445
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 446
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 447
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 448
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 449
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 450
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 451
-           A = False
            B = True
            C = False
            D = False
-Estado: 452
+Estado: 448
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 449
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 450
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 451
            A = True
            B = True
            C = True
            D = True
-Estado: 453
+Estado: 452
            A = False
            B = False
+           C = False
+           D = False
+Estado: 453
+           A = True
+           B = True
            C = False
            D = False
 Estado: 454
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 455
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 456
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 457
            A = True
            B = True
-           C = False
-           D = False
-Estado: 458
-           A = True
-           B = False
            C = True
            D = True
-Estado: 459
+Estado: 458
            A = False
            B = False
            C = False
-           D = True
-Estado: 460
+           D = False
+Estado: 459
            A = True
            B = True
+           C = False
+           D = False
+Estado: 460
+           A = True
+           B = False
            C = False
            D = True
 Estado: 461
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 462
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 463
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 464
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 465
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 466
+Estado: 464
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 465
+           A = True
            B = True
            C = False
            D = False
+Estado: 466
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 467
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 468
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 469
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 470
            A = False
            B = False
-           C = True
-           D = True
-Estado: 471
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 472
+           D = False
+Estado: 471
            A = True
            B = True
            C = False
            D = False
+Estado: 472
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 473
            A = True
            B = False
@@ -2380,143 +2380,143 @@ Estado: 474
 Estado: 475
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 476
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 477
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 478
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 479
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 480
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 481
-           A = False
            B = True
            C = False
            D = False
-Estado: 482
+Estado: 478
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 479
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 480
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 481
            A = True
            B = True
            C = True
            D = True
-Estado: 483
+Estado: 482
            A = False
            B = False
+           C = False
+           D = False
+Estado: 483
+           A = True
+           B = True
            C = False
            D = False
 Estado: 484
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 485
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 486
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 487
            A = True
            B = True
-           C = False
-           D = False
-Estado: 488
-           A = True
-           B = False
            C = True
            D = True
-Estado: 489
+Estado: 488
            A = False
            B = False
            C = False
-           D = True
-Estado: 490
+           D = False
+Estado: 489
            A = True
            B = True
+           C = False
+           D = False
+Estado: 490
+           A = True
+           B = False
            C = False
            D = True
 Estado: 491
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 492
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 493
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 494
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 495
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 496
+Estado: 494
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 495
+           A = True
            B = True
            C = False
            D = False
+Estado: 496
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 497
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 498
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 499
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 500
            A = False
            B = False
-           C = True
-           D = True
-Estado: 501
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 502
+           D = False
+Estado: 501
            A = True
            B = True
            C = False
            D = False
+Estado: 502
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 503
            A = True
            B = False
@@ -2530,143 +2530,143 @@ Estado: 504
 Estado: 505
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 506
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 507
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 508
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 509
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 510
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 511
-           A = False
            B = True
            C = False
            D = False
-Estado: 512
+Estado: 508
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 509
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 510
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 511
            A = True
            B = True
            C = True
            D = True
-Estado: 513
+Estado: 512
            A = False
            B = False
+           C = False
+           D = False
+Estado: 513
+           A = True
+           B = True
            C = False
            D = False
 Estado: 514
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 515
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 516
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 517
            A = True
            B = True
-           C = False
-           D = False
-Estado: 518
-           A = True
-           B = False
            C = True
            D = True
-Estado: 519
+Estado: 518
            A = False
            B = False
            C = False
-           D = True
-Estado: 520
+           D = False
+Estado: 519
            A = True
            B = True
+           C = False
+           D = False
+Estado: 520
+           A = True
+           B = False
            C = False
            D = True
 Estado: 521
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 522
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 523
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 524
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 525
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 526
+Estado: 524
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 525
+           A = True
            B = True
            C = False
            D = False
+Estado: 526
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 527
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 528
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 529
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 530
            A = False
            B = False
-           C = True
-           D = True
-Estado: 531
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 532
+           D = False
+Estado: 531
            A = True
            B = True
            C = False
            D = False
+Estado: 532
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 533
            A = True
            B = False
@@ -2680,143 +2680,143 @@ Estado: 534
 Estado: 535
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 536
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 537
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 538
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 539
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 540
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 541
-           A = False
            B = True
            C = False
            D = False
-Estado: 542
+Estado: 538
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 539
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 540
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 541
            A = True
            B = True
            C = True
            D = True
-Estado: 543
+Estado: 542
            A = False
            B = False
+           C = False
+           D = False
+Estado: 543
+           A = True
+           B = True
            C = False
            D = False
 Estado: 544
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 545
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 546
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 547
            A = True
            B = True
-           C = False
-           D = False
-Estado: 548
-           A = True
-           B = False
            C = True
            D = True
-Estado: 549
+Estado: 548
            A = False
            B = False
            C = False
-           D = True
-Estado: 550
+           D = False
+Estado: 549
            A = True
            B = True
+           C = False
+           D = False
+Estado: 550
+           A = True
+           B = False
            C = False
            D = True
 Estado: 551
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 552
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 553
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 554
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 555
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 556
+Estado: 554
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 555
+           A = True
            B = True
            C = False
            D = False
+Estado: 556
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 557
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 558
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 559
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 560
            A = False
            B = False
-           C = True
-           D = True
-Estado: 561
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 562
+           D = False
+Estado: 561
            A = True
            B = True
            C = False
            D = False
+Estado: 562
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 563
            A = True
            B = False
@@ -2830,143 +2830,143 @@ Estado: 564
 Estado: 565
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 566
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 567
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 568
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 569
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 570
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 571
-           A = False
            B = True
            C = False
            D = False
-Estado: 572
+Estado: 568
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 569
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 570
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 571
            A = True
            B = True
            C = True
            D = True
-Estado: 573
+Estado: 572
            A = False
            B = False
+           C = False
+           D = False
+Estado: 573
+           A = True
+           B = True
            C = False
            D = False
 Estado: 574
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 575
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 576
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 577
            A = True
            B = True
-           C = False
-           D = False
-Estado: 578
-           A = True
-           B = False
            C = True
            D = True
-Estado: 579
+Estado: 578
            A = False
            B = False
            C = False
-           D = True
-Estado: 580
+           D = False
+Estado: 579
            A = True
            B = True
+           C = False
+           D = False
+Estado: 580
+           A = True
+           B = False
            C = False
            D = True
 Estado: 581
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 582
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 583
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 584
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 585
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 586
+Estado: 584
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 585
+           A = True
            B = True
            C = False
            D = False
+Estado: 586
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 587
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 588
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 589
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 590
            A = False
            B = False
-           C = True
-           D = True
-Estado: 591
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 592
+           D = False
+Estado: 591
            A = True
            B = True
            C = False
            D = False
+Estado: 592
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 593
            A = True
            B = False
@@ -2980,143 +2980,143 @@ Estado: 594
 Estado: 595
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 596
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 597
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 598
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 599
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 600
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 601
-           A = False
            B = True
            C = False
            D = False
-Estado: 602
+Estado: 598
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 599
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 600
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 601
            A = True
            B = True
            C = True
            D = True
-Estado: 603
+Estado: 602
            A = False
            B = False
+           C = False
+           D = False
+Estado: 603
+           A = True
+           B = True
            C = False
            D = False
 Estado: 604
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 605
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 606
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 607
            A = True
            B = True
-           C = False
-           D = False
-Estado: 608
-           A = True
-           B = False
            C = True
            D = True
-Estado: 609
+Estado: 608
            A = False
            B = False
            C = False
-           D = True
-Estado: 610
+           D = False
+Estado: 609
            A = True
            B = True
+           C = False
+           D = False
+Estado: 610
+           A = True
+           B = False
            C = False
            D = True
 Estado: 611
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 612
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 613
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 614
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 615
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 616
+Estado: 614
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 615
+           A = True
            B = True
            C = False
            D = False
+Estado: 616
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 617
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 618
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 619
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 620
            A = False
            B = False
-           C = True
-           D = True
-Estado: 621
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 622
+           D = False
+Estado: 621
            A = True
            B = True
            C = False
            D = False
+Estado: 622
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 623
            A = True
            B = False
@@ -3130,143 +3130,143 @@ Estado: 624
 Estado: 625
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 626
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 627
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 628
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 629
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 630
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 631
-           A = False
            B = True
            C = False
            D = False
-Estado: 632
+Estado: 628
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 629
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 630
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 631
            A = True
            B = True
            C = True
            D = True
-Estado: 633
+Estado: 632
            A = False
            B = False
+           C = False
+           D = False
+Estado: 633
+           A = True
+           B = True
            C = False
            D = False
 Estado: 634
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 635
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 636
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 637
            A = True
            B = True
-           C = False
-           D = False
-Estado: 638
-           A = True
-           B = False
            C = True
            D = True
-Estado: 639
+Estado: 638
            A = False
            B = False
            C = False
-           D = True
-Estado: 640
+           D = False
+Estado: 639
            A = True
            B = True
+           C = False
+           D = False
+Estado: 640
+           A = True
+           B = False
            C = False
            D = True
 Estado: 641
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 642
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 643
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 644
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 645
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 646
+Estado: 644
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 645
+           A = True
            B = True
            C = False
            D = False
+Estado: 646
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 647
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 648
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 649
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 650
            A = False
            B = False
-           C = True
-           D = True
-Estado: 651
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 652
+           D = False
+Estado: 651
            A = True
            B = True
            C = False
            D = False
+Estado: 652
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 653
            A = True
            B = False
@@ -3280,143 +3280,143 @@ Estado: 654
 Estado: 655
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 656
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 657
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 658
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 659
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 660
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 661
-           A = False
            B = True
            C = False
            D = False
-Estado: 662
+Estado: 658
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 659
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 660
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 661
            A = True
            B = True
            C = True
            D = True
-Estado: 663
+Estado: 662
            A = False
            B = False
+           C = False
+           D = False
+Estado: 663
+           A = True
+           B = True
            C = False
            D = False
 Estado: 664
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 665
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 666
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 667
            A = True
            B = True
-           C = False
-           D = False
-Estado: 668
-           A = True
-           B = False
            C = True
            D = True
-Estado: 669
+Estado: 668
            A = False
            B = False
            C = False
-           D = True
-Estado: 670
+           D = False
+Estado: 669
            A = True
            B = True
+           C = False
+           D = False
+Estado: 670
+           A = True
+           B = False
            C = False
            D = True
 Estado: 671
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 672
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 673
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 674
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 675
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 676
+Estado: 674
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 675
+           A = True
            B = True
            C = False
            D = False
+Estado: 676
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 677
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 678
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 679
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 680
            A = False
            B = False
-           C = True
-           D = True
-Estado: 681
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 682
+           D = False
+Estado: 681
            A = True
            B = True
            C = False
            D = False
+Estado: 682
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 683
            A = True
            B = False
@@ -3430,143 +3430,143 @@ Estado: 684
 Estado: 685
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 686
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 687
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 688
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 689
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 690
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 691
-           A = False
            B = True
            C = False
            D = False
-Estado: 692
+Estado: 688
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 689
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 690
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 691
            A = True
            B = True
            C = True
            D = True
-Estado: 693
+Estado: 692
            A = False
            B = False
+           C = False
+           D = False
+Estado: 693
+           A = True
+           B = True
            C = False
            D = False
 Estado: 694
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 695
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 696
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 697
            A = True
            B = True
-           C = False
-           D = False
-Estado: 698
-           A = True
-           B = False
            C = True
            D = True
-Estado: 699
+Estado: 698
            A = False
            B = False
            C = False
-           D = True
-Estado: 700
+           D = False
+Estado: 699
            A = True
            B = True
+           C = False
+           D = False
+Estado: 700
+           A = True
+           B = False
            C = False
            D = True
 Estado: 701
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 702
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 703
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 704
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 705
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 706
+Estado: 704
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 705
+           A = True
            B = True
            C = False
            D = False
+Estado: 706
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 707
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 708
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 709
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 710
            A = False
            B = False
-           C = True
-           D = True
-Estado: 711
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 712
+           D = False
+Estado: 711
            A = True
            B = True
            C = False
            D = False
+Estado: 712
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 713
            A = True
            B = False
@@ -3580,143 +3580,143 @@ Estado: 714
 Estado: 715
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 716
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 717
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 718
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 719
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 720
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 721
-           A = False
            B = True
            C = False
            D = False
-Estado: 722
+Estado: 718
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 719
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 720
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 721
            A = True
            B = True
            C = True
            D = True
-Estado: 723
+Estado: 722
            A = False
            B = False
+           C = False
+           D = False
+Estado: 723
+           A = True
+           B = True
            C = False
            D = False
 Estado: 724
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 725
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 726
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 727
            A = True
            B = True
-           C = False
-           D = False
-Estado: 728
-           A = True
-           B = False
            C = True
            D = True
-Estado: 729
+Estado: 728
            A = False
            B = False
            C = False
-           D = True
-Estado: 730
+           D = False
+Estado: 729
            A = True
            B = True
+           C = False
+           D = False
+Estado: 730
+           A = True
+           B = False
            C = False
            D = True
 Estado: 731
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 732
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 733
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 734
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 735
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 736
+Estado: 734
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 735
+           A = True
            B = True
            C = False
            D = False
+Estado: 736
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 737
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 738
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 739
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 740
            A = False
            B = False
-           C = True
-           D = True
-Estado: 741
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 742
+           D = False
+Estado: 741
            A = True
            B = True
            C = False
            D = False
+Estado: 742
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 743
            A = True
            B = False
@@ -3730,143 +3730,143 @@ Estado: 744
 Estado: 745
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 746
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 747
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 748
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 749
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 750
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 751
-           A = False
            B = True
            C = False
            D = False
-Estado: 752
+Estado: 748
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 749
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 750
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 751
            A = True
            B = True
            C = True
            D = True
-Estado: 753
+Estado: 752
            A = False
            B = False
+           C = False
+           D = False
+Estado: 753
+           A = True
+           B = True
            C = False
            D = False
 Estado: 754
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 755
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 756
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 757
            A = True
            B = True
-           C = False
-           D = False
-Estado: 758
-           A = True
-           B = False
            C = True
            D = True
-Estado: 759
+Estado: 758
            A = False
            B = False
            C = False
-           D = True
-Estado: 760
+           D = False
+Estado: 759
            A = True
            B = True
+           C = False
+           D = False
+Estado: 760
+           A = True
+           B = False
            C = False
            D = True
 Estado: 761
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 762
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 763
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 764
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 765
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 766
+Estado: 764
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 765
+           A = True
            B = True
            C = False
            D = False
+Estado: 766
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 767
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 768
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 769
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 770
            A = False
            B = False
-           C = True
-           D = True
-Estado: 771
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 772
+           D = False
+Estado: 771
            A = True
            B = True
            C = False
            D = False
+Estado: 772
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 773
            A = True
            B = False
@@ -3880,143 +3880,143 @@ Estado: 774
 Estado: 775
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 776
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 777
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 778
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 779
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 780
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 781
-           A = False
            B = True
            C = False
            D = False
-Estado: 782
+Estado: 778
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 779
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 780
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 781
            A = True
            B = True
            C = True
            D = True
-Estado: 783
+Estado: 782
            A = False
            B = False
+           C = False
+           D = False
+Estado: 783
+           A = True
+           B = True
            C = False
            D = False
 Estado: 784
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 785
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 786
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 787
            A = True
            B = True
-           C = False
-           D = False
-Estado: 788
-           A = True
-           B = False
            C = True
            D = True
-Estado: 789
+Estado: 788
            A = False
            B = False
            C = False
-           D = True
-Estado: 790
+           D = False
+Estado: 789
            A = True
            B = True
+           C = False
+           D = False
+Estado: 790
+           A = True
+           B = False
            C = False
            D = True
 Estado: 791
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 792
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 793
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 794
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 795
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 796
+Estado: 794
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 795
+           A = True
            B = True
            C = False
            D = False
+Estado: 796
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 797
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 798
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 799
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 800
            A = False
            B = False
-           C = True
-           D = True
-Estado: 801
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 802
+           D = False
+Estado: 801
            A = True
            B = True
            C = False
            D = False
+Estado: 802
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 803
            A = True
            B = False
@@ -4030,143 +4030,143 @@ Estado: 804
 Estado: 805
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 806
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 807
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 808
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 809
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 810
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 811
-           A = False
            B = True
            C = False
            D = False
-Estado: 812
+Estado: 808
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 809
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 810
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 811
            A = True
            B = True
            C = True
            D = True
-Estado: 813
+Estado: 812
            A = False
            B = False
+           C = False
+           D = False
+Estado: 813
+           A = True
+           B = True
            C = False
            D = False
 Estado: 814
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 815
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 816
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 817
            A = True
            B = True
-           C = False
-           D = False
-Estado: 818
-           A = True
-           B = False
            C = True
            D = True
-Estado: 819
+Estado: 818
            A = False
            B = False
            C = False
-           D = True
-Estado: 820
+           D = False
+Estado: 819
            A = True
            B = True
+           C = False
+           D = False
+Estado: 820
+           A = True
+           B = False
            C = False
            D = True
 Estado: 821
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 822
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 823
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 824
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 825
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 826
+Estado: 824
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 825
+           A = True
            B = True
            C = False
            D = False
+Estado: 826
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 827
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 828
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 829
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 830
            A = False
            B = False
-           C = True
-           D = True
-Estado: 831
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 832
+           D = False
+Estado: 831
            A = True
            B = True
            C = False
            D = False
+Estado: 832
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 833
            A = True
            B = False
@@ -4180,143 +4180,143 @@ Estado: 834
 Estado: 835
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 836
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 837
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 838
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 839
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 840
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 841
-           A = False
            B = True
            C = False
            D = False
-Estado: 842
+Estado: 838
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 839
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 840
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 841
            A = True
            B = True
            C = True
            D = True
-Estado: 843
+Estado: 842
            A = False
            B = False
+           C = False
+           D = False
+Estado: 843
+           A = True
+           B = True
            C = False
            D = False
 Estado: 844
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 845
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 846
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 847
            A = True
            B = True
-           C = False
-           D = False
-Estado: 848
-           A = True
-           B = False
            C = True
            D = True
-Estado: 849
+Estado: 848
            A = False
            B = False
            C = False
-           D = True
-Estado: 850
+           D = False
+Estado: 849
            A = True
            B = True
+           C = False
+           D = False
+Estado: 850
+           A = True
+           B = False
            C = False
            D = True
 Estado: 851
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 852
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 853
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 854
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 855
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 856
+Estado: 854
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 855
+           A = True
            B = True
            C = False
            D = False
+Estado: 856
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 857
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 858
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 859
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 860
            A = False
            B = False
-           C = True
-           D = True
-Estado: 861
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 862
+           D = False
+Estado: 861
            A = True
            B = True
            C = False
            D = False
+Estado: 862
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 863
            A = True
            B = False
@@ -4330,143 +4330,143 @@ Estado: 864
 Estado: 865
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 866
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 867
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 868
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 869
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 870
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 871
-           A = False
            B = True
            C = False
            D = False
-Estado: 872
+Estado: 868
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 869
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 870
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 871
            A = True
            B = True
            C = True
            D = True
-Estado: 873
+Estado: 872
            A = False
            B = False
+           C = False
+           D = False
+Estado: 873
+           A = True
+           B = True
            C = False
            D = False
 Estado: 874
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 875
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 876
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 877
            A = True
            B = True
-           C = False
-           D = False
-Estado: 878
-           A = True
-           B = False
            C = True
            D = True
-Estado: 879
+Estado: 878
            A = False
            B = False
            C = False
-           D = True
-Estado: 880
+           D = False
+Estado: 879
            A = True
            B = True
+           C = False
+           D = False
+Estado: 880
+           A = True
+           B = False
            C = False
            D = True
 Estado: 881
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 882
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 883
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 884
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 885
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 886
+Estado: 884
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 885
+           A = True
            B = True
            C = False
            D = False
+Estado: 886
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 887
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 888
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 889
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 890
            A = False
            B = False
-           C = True
-           D = True
-Estado: 891
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 892
+           D = False
+Estado: 891
            A = True
            B = True
            C = False
            D = False
+Estado: 892
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 893
            A = True
            B = False
@@ -4480,143 +4480,143 @@ Estado: 894
 Estado: 895
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 896
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 897
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 898
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 899
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 900
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 901
-           A = False
            B = True
            C = False
            D = False
-Estado: 902
+Estado: 898
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 899
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 900
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 901
            A = True
            B = True
            C = True
            D = True
-Estado: 903
+Estado: 902
            A = False
            B = False
+           C = False
+           D = False
+Estado: 903
+           A = True
+           B = True
            C = False
            D = False
 Estado: 904
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 905
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 906
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 907
            A = True
            B = True
-           C = False
-           D = False
-Estado: 908
-           A = True
-           B = False
            C = True
            D = True
-Estado: 909
+Estado: 908
            A = False
            B = False
            C = False
-           D = True
-Estado: 910
+           D = False
+Estado: 909
            A = True
            B = True
+           C = False
+           D = False
+Estado: 910
+           A = True
+           B = False
            C = False
            D = True
 Estado: 911
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 912
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 913
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 914
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 915
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 916
+Estado: 914
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 915
+           A = True
            B = True
            C = False
            D = False
+Estado: 916
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 917
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 918
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 919
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 920
            A = False
            B = False
-           C = True
-           D = True
-Estado: 921
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 922
+           D = False
+Estado: 921
            A = True
            B = True
            C = False
            D = False
+Estado: 922
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 923
            A = True
            B = False
@@ -4630,143 +4630,143 @@ Estado: 924
 Estado: 925
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 926
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 927
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 928
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 929
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 930
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 931
-           A = False
            B = True
            C = False
            D = False
-Estado: 932
+Estado: 928
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 929
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 930
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 931
            A = True
            B = True
            C = True
            D = True
-Estado: 933
+Estado: 932
            A = False
            B = False
+           C = False
+           D = False
+Estado: 933
+           A = True
+           B = True
            C = False
            D = False
 Estado: 934
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 935
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 936
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 937
            A = True
            B = True
-           C = False
-           D = False
-Estado: 938
-           A = True
-           B = False
            C = True
            D = True
-Estado: 939
+Estado: 938
            A = False
            B = False
            C = False
-           D = True
-Estado: 940
+           D = False
+Estado: 939
            A = True
            B = True
+           C = False
+           D = False
+Estado: 940
+           A = True
+           B = False
            C = False
            D = True
 Estado: 941
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 942
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 943
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 944
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 945
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 946
+Estado: 944
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 945
+           A = True
            B = True
            C = False
            D = False
+Estado: 946
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 947
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 948
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 949
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 950
            A = False
            B = False
-           C = True
-           D = True
-Estado: 951
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 952
+           D = False
+Estado: 951
            A = True
            B = True
            C = False
            D = False
+Estado: 952
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 953
            A = True
            B = False
@@ -4780,143 +4780,143 @@ Estado: 954
 Estado: 955
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 956
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 957
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 958
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 959
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 960
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 961
-           A = False
            B = True
            C = False
            D = False
-Estado: 962
+Estado: 958
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 959
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 960
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 961
            A = True
            B = True
            C = True
            D = True
-Estado: 963
+Estado: 962
            A = False
            B = False
+           C = False
+           D = False
+Estado: 963
+           A = True
+           B = True
            C = False
            D = False
 Estado: 964
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 965
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 966
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 967
            A = True
            B = True
-           C = False
-           D = False
-Estado: 968
-           A = True
-           B = False
            C = True
            D = True
-Estado: 969
+Estado: 968
            A = False
            B = False
            C = False
-           D = True
-Estado: 970
+           D = False
+Estado: 969
            A = True
            B = True
+           C = False
+           D = False
+Estado: 970
+           A = True
+           B = False
            C = False
            D = True
 Estado: 971
            A = True
            B = False
-           C = False
-           D = False
+           C = True
+           D = True
 Estado: 972
-           A = True
+           A = False
            B = False
-           C = True
-           D = False
+           C = False
+           D = True
 Estado: 973
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 974
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 975
-           A = False
+           A = True
            B = True
            C = True
            D = True
-Estado: 976
+Estado: 974
            A = False
+           B = False
+           C = False
+           D = False
+Estado: 975
+           A = True
            B = True
            C = False
            D = False
+Estado: 976
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 977
            A = True
-           B = True
+           B = False
            C = True
            D = True
 Estado: 978
            A = False
            B = False
            C = False
-           D = False
+           D = True
 Estado: 979
            A = True
            B = True
            C = True
-           D = False
+           D = True
 Estado: 980
            A = False
            B = False
-           C = True
-           D = True
-Estado: 981
-           A = False
-           B = True
            C = False
-           D = True
-Estado: 982
+           D = False
+Estado: 981
            A = True
            B = True
            C = False
            D = False
+Estado: 982
+           A = True
+           B = False
+           C = False
+           D = True
 Estado: 983
            A = True
            B = False
@@ -4930,97 +4930,92 @@ Estado: 984
 Estado: 985
            A = True
            B = True
-           C = False
+           C = True
            D = True
 Estado: 986
-           A = True
+           A = False
            B = False
            C = False
            D = False
 Estado: 987
            A = True
-           B = False
-           C = True
-           D = False
-Estado: 988
-           A = False
-           B = False
-           C = True
-           D = False
-Estado: 989
-           A = False
-           B = True
-           C = True
-           D = False
-Estado: 990
-           A = False
-           B = True
-           C = True
-           D = True
-Estado: 991
-           A = False
            B = True
            C = False
            D = False
-Estado: 992
+Estado: 988
+           A = True
+           B = False
+           C = False
+           D = True
+Estado: 989
+           A = True
+           B = False
+           C = True
+           D = True
+Estado: 990
+           A = False
+           B = False
+           C = False
+           D = True
+Estado: 991
            A = True
            B = True
            C = True
            D = True
-Estado: 993
+Estado: 992
            A = False
            B = False
+           C = False
+           D = False
+Estado: 993
+           A = True
+           B = True
            C = False
            D = False
 Estado: 994
            A = True
-           B = True
-           C = True
-           D = False
+           B = False
+           C = False
+           D = True
 Estado: 995
-           A = False
+           A = True
            B = False
            C = True
            D = True
 Estado: 996
            A = False
-           B = True
+           B = False
            C = False
            D = True
 Estado: 997
            A = True
            B = True
-           C = False
-           D = False
-Estado: 998
-           A = True
-           B = False
            C = True
            D = True
-Estado: 999
+Estado: 998
            A = False
            B = False
            C = False
-           D = True
+           D = False
+Estado: 999
+           A = True
+           B = True
+           C = False
+           D = False
 
 Verificação BMC do sistema:
 propriedade nao valida
 0
 A= False
-B= True
-C= True
+B= False
+C= False
 D= True
 1
-A= False
-B= True
-C= False
-D= False
-2
 A= True
 B= True
 C= True
 D= True
-3
+2
 A= False
 B= False
 C= False
@@ -5029,9 +5024,9 @@ D= False
 Verificação com k-indução do sistema:
 A propriedade não é válida nos k estados iniciais.
 A = False
-B = True
-C = True
+B = False
+C = False
 D = True
 
 Verificação model checking com interpolantes do sistema:
-Safe
+unsafe
