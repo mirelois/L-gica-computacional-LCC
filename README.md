@@ -1,2 +1,2 @@
-# L-gica-computacional-LCC
+# Lógica computacional LCC
 
